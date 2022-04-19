@@ -24,39 +24,39 @@ const Services = () => {
          </div>
          <ul className='service__list'>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             Top knotch user-interface design implementation
+             Top knotch user-interface design implementation.
            </p>
          </li>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             High quality optimization strategy and testing
+             High quality optimization strategy and testing.
            </p>
          </li>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
              Utilization of API's
            </p>
          </li>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             Hosting and on-going website maintenance
+             Hosting and on-going website maintenance.
            </p>
          </li>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             Creation of highly responsive and smooth E-commerce Web-Applications
+             Creation of  responsive and smooth E-commerce Web-Apps.
            </p>
          </li>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             Creation of custom Web-Applications and Landing-Pages
+             Creation of custom Web-Applications and Landing-Pages.
            </p>
          </li>
          </ul>
@@ -69,27 +69,27 @@ const Services = () => {
          </div>
          <ul className='service__list'>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             Creation of content for Blogs,Marketing and Promotional-Materials 
+             Creation of content for Marketing and Promotional-Materials.
            </p>
          </li>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             Monitoring websites and social media metrics
+             Monitoring websites and social media metrics.
            </p>
          </li>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             Ensuring adherence to best SEO practices
+             Ensuring adherence to best SEO practices.
            </p>
          </li>
          <li>
-           <BsFillCartCheckFill className='service-list-icons'/>
+           <BsFillCartCheckFill className='service__list-icon'/>
            <p>
-             Using tools and frameworks to optimize user experience and interraction
+             Using tools and frameworks to optimize user experience and interraction.
            </p>
          </li>
          </ul>

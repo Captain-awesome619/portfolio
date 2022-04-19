@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from "../../assets/IMG_3213.jpg"
+import ME from "../../assets/me3.JPG"
 import {FaAward} from "react-icons/fa"
 import {SiBookstack} from "react-icons/si"
 import { motion } from 'framer-motion'
