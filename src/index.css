@@ -33,7 +33,7 @@ body{
     background:var(--color-bg);
     line-height: 1.7;
     color: var(--color-white);
-    background-image: url(C:\Users\lord_awesome\portfolio\portfolio-app\src\assets\bg-texture.png);
+    background-image: url(../src/assets/bg-texture.png);
 }
 .container{
     width: var(--container-width-lg);
