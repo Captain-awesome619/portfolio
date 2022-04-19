@@ -58,18 +58,18 @@ return(
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>Ogunsolatoluwalase@gmail.com</h5>
-            <a href="mailto:Ogunsolatoluwalase@gmail.com" target="_blank">Send me a mail</a>
+            <a href="mailto:Ogunsolatoluwalase@gmail.com" target="_blank" rel='noreferrer'>Send me a mail</a>
           </article>
           <article className="contact__option">
             <AiOutlineTwitter className='contact__option-icon'/>
             <h4>Twitter</h4>
             <h5>lord_awesomee</h5>
-            <a href="https://twitter.com/lord_awesomee" target="_blank">Buzz me on Twitter</a>
+            <a href="https://twitter.com/lord_awesomee" target="_blank" rel='noreferrer'>Buzz me on Twitter</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
-            <a href="https://api.whatsapp.com/send?phone=+234 816 7160 663" target="_blank">Send a message</a>
+            <a href="https://api.whatsapp.com/send?phone=+234 816 7160 663" target="_blank" rel='noreferrer'>Send a message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}

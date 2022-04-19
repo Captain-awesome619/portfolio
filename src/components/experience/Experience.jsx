@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './experience.css'
 import {BsBookmarkCheckFill} from "react-icons/bs"
 import { motion } from 'framer-motion'
