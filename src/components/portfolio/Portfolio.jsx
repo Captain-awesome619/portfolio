@@ -8,29 +8,29 @@ import { UseScroll } from '../UseScroll'
 import { experienceanimations } from '../animation'
 
 
-const data = [ 
-  { 
+const data = [
+  {
     id: 1,
     image: IMG1,
     title: 'A multipurpose-app for a Web-development agency',
     github: 'https://github.com/Captain-awesome619/cuddly-couscous',
     demo: 'https://glowing-jelly-c2c776.netlify.app/'
-    
+
   },
   {
     id: 2,
     image: IMG2,
-    title: 'The Cafena coffee shop Web-App',
+    title: 'The Cafena coffee buisness Web-Application',
     github: 'https://github.com/Captain-awesome619/coffee-app',
     demo: 'https://fanciful-starship-a24bfb.netlify.app/'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'An up to date crypto-currency web-app',
+    title: 'An up to date crypto-currency Web-Applicationl',
     github: 'https://github.com/Captain-awesome619/cryptoverse',
     demo: 'https://crypto-verse-ac724d.netlify.app/'
-  } 
+  }
 ]
 
 
@@ -40,9 +40,9 @@ const data = [
       <motion.section id='portfolio'>
         <h5>My Recent Projects</h5>
         <h2>Portfolio</h2>
-  
+
         <motion.div className="container portfolio__container"
-        ref={element} 
+        ref={element}
         variants={experienceanimations}
           transition={{type: "tween" ,duration: 1, }}
           animate = {controls}
@@ -66,7 +66,7 @@ const data = [
         </motion.div>
       </motion.section>
     )
-   
+
   }
-  
+
   export default Portfolio

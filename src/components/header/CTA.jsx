@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import CV from '../../assets/resume4.docx'
+import CV from '../../assets/resume5.docx'
 const CTA = () => {
   return (
     <div className='cta'>
