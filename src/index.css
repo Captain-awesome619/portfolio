@@ -33,7 +33,7 @@ body{
     background:var(--color-bg);
     line-height: 1.7;
     color: var(--color-white);
-    background-image: url(../src/assets/bg-texture.png);
+   /* background-image: url(../src/assets/bg-texture.png);*/
 }
 .container{
     width: var(--container-width-lg);
@@ -43,14 +43,14 @@ body{
 h1 , h2 , h3 , h4 , h5{
     font-weight: 500;
 }
- 
+
 h1{
     font-size: 2.5rem;
 }
  section{
-    margin-top: 8rem; 
+    margin-top: 8rem;
 
- }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+ }
 
 section > h2, section > h5{
     text-align: center;
