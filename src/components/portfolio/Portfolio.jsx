@@ -6,7 +6,7 @@ import IMG3 from "../../assets/crypt3.png"
 import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
 import { experienceanimations } from '../animation'
-
+import IMG4 from "../../assets/Realator1.png"
 
 const data = [
   {
@@ -24,12 +24,20 @@ const data = [
     github: 'https://github.com/Captain-awesome619/coffee-app',
     demo: 'https://fanciful-starship-a24bfb.netlify.app/'
   },
+
   {
     id: 3,
     image: IMG3,
     title: 'An up to date crypto-currency Web-Applicationl',
     github: 'https://github.com/Captain-awesome619/cryptoverse',
     demo: 'https://crypto-verse-ac724d.netlify.app/'
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: 'A Real-Estate Web-App with various options',
+    github: 'https://github.com/Captain-awesome619/Realator',
+    demo: 'https://realator-85d0e6.netlify.app/'
   }
 ]
 
