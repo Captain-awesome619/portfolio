@@ -3,21 +3,32 @@ header {
     padding-top: 5rem;
     overflow: hidden;
   }
-  
+
   .header__container {
     text-align: center;
     height: 100%;
     position: relative;
   }
-  
+
   /* =============== CTA ============== */
   .cta {
     margin-top: 2.5rem;
     display: flex;
-    gap: 1.2rem;
+    gap: 1.3rem;
     justify-content: center;
   }
-  
+
+
+
+  .mode{
+
+    display: flex;
+    padding: 0px;
+    width: 10rem;
+    position: absolute;
+    top: 17%;
+    left: 47%;
+  }
   /* =============== HEADER SOCIALS ============== */
   .header__socials {
     display: flex;
@@ -28,14 +39,14 @@ header {
     left: 0;
     bottom: 3rem;
   }
-  
+
   .header__socials::after {
     content: "";
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
   }
-  
+
   /* =============== ME ============== */
   .me {
     background: linear-gradient(var(--color-primary), transparent);
@@ -49,7 +60,7 @@ header {
     overflow: hidden;
     padding: 12rem 0.5rem 0.5rem 1.5rem;
   }
-  
+
   /* =============== SCROLL DOWN ============== */
   .scroll__down {
     position: absolute;
@@ -91,12 +102,27 @@ header {
 
 
 
-  
+
   /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
   @media screen and (max-width: 1024px) {
     header {
       height: 88vh;
     }
+    .cta {
+      margin-top: 2.5rem;
+      display: grid;
+      gap: 1.2rem;
+      justify-content: center;
+    }
+
+
+.mode{
+  top: 20%;
+  left: 45%;
+}
+.me{
+  margin-top: 1.2rem;
+}
   }
   /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 600px) {
@@ -104,9 +130,15 @@ header {
       height: 100vh;
       padding-top: 4rem;
     }
-  
+
     .header__socials,
     .scroll__down {
       display: none;
     }
+.mode{
+  top: 17%;
+  left: 42%;
+}
+
+
 }

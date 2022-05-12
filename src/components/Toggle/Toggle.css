@@ -4,8 +4,10 @@
     border: 3px solid var( --color-bg-variant);
     border-radius: 1rem;
      position: relative;
-    padding: 2px;
+    padding-left: 1px;
     cursor: pointer;
+    gap: 20px;
+
 }
 .toggle>*{
     width: 1rem;
@@ -17,3 +19,4 @@
     background: var(--color-white);
     position: absolute;
 }
+

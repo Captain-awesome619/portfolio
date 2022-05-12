@@ -19,6 +19,7 @@ const Toggle = () => {
       <div
         className="t-button"
         style={darkMode ? { left: "2px" } : { right: "2px" }}
+
       ></div>
     </div>
   );
