@@ -135,8 +135,15 @@ header {
     .scroll__down {
       display: none;
     }
+    .cta {
+      margin-top: 3rem;
+      display: grid;
+      gap: 1.2rem;
+      justify-content: center;
+    }
+
 .mode{
-  top: 26.5%;
+  top: 27%;
   left: 42%;
 }
 
