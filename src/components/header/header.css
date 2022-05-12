@@ -125,7 +125,7 @@ header {
 }
   }
   /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 578px) {
     header {
       height: 100vh;
       padding-top: 4rem;
@@ -136,7 +136,7 @@ header {
       display: none;
     }
 .mode{
-  top: 17%;
+  top: 26.5%;
   left: 42%;
 }
 
