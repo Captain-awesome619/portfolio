@@ -13,7 +13,7 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: 'Check out my blog on packages and technologies I use',
+    title: 'Check out my blog on packages and technologies I use!',
     github: 'https://github.com/Captain-awesome619/blog',
     demo: 'https://my-techstuff-1eb0c6.netlify.app/'
 
