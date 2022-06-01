@@ -4,11 +4,14 @@ import {BsBookmarkCheckFill} from "react-icons/bs"
 import { motion } from 'framer-motion'
 import { experienceanimations } from '../animation'
 import { UseScroll } from '../UseScroll'
+import { InView } from "react-intersection-observer";
+
 
 const Experience = () => {
 
-const [element,controls] = UseScroll();
+  const [element,controls] = UseScroll();
  return (
+
     <motion.section
     id='experience'>
       <h5>Skills I Possess</h5>
@@ -18,6 +21,7 @@ const [element,controls] = UseScroll();
       variants={experienceanimations}
         transition={{type: "tween" ,duration: 1, }}
         animate = {controls}>
+
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
@@ -99,6 +103,8 @@ const [element,controls] = UseScroll();
             </div>
             </div>
         </motion.div>
+
+
       </motion.section>
 
   )

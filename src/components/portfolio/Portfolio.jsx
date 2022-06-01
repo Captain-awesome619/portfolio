@@ -7,8 +7,17 @@ import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
 import { experienceanimations } from '../animation'
 import IMG4 from "../../assets/Realator1.png"
+import IMG5 from "../../assets/blog.png"
 
 const data = [
+  {
+    id: 5,
+    image: IMG5,
+    title: 'Check out my blog on packages and technologies I use',
+    github: 'https://github.com/Captain-awesome619/blog',
+    demo: 'https://my-techstuff-1eb0c6.netlify.app/'
+
+  },
   {
     id: 1,
     image: IMG1,
