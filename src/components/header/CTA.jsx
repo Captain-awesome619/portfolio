@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import CV from '../../assets/Resume1.pdf'
+import CV from '../../assets/Resume.pdf'
 import Toggle from '../Toggle/Toggle'
 const CTA = () => {
   return (
