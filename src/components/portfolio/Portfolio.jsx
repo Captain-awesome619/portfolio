@@ -15,17 +15,16 @@ import IMG5 from "../../assets/blog.png"
   const [element,controls] = UseScroll();
     return (
       <motion.section id='portfolio'
-      ref={element}
-      variants={experienceanimations}
-        transition={{type: "tween" ,duration: 0.5, }}
-        animate = {controls}
+
       >
         <h5>My Recent Projects</h5>
         <h2>Portfolio</h2>
 
         <motion.div className="container portfolio__container"
-
-        >
+ ref={element}
+ variants={experienceanimations}
+   transition={{type: "tween" ,duration: 0.5, }}
+   animate = {controls} >
           {
             data.map(({id, image, title, github, demo}) => {
               return (

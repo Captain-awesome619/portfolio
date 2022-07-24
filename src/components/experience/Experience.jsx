@@ -82,15 +82,15 @@ const Experience = () => {
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon' />
 <div>
-            <h4>Content Creation</h4>
-            <small className="text-light">Intermediate</small>
+            <h4>Web-Styling and responsiveness</h4>
+            <small className="text-light">Experienced</small>
             </div>
             </article>
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon' />
             <div>
             <h4>API's</h4>
-            <small className="text-light">Intermediate</small>
+            <small className="text-light">Experienced</small>
         </div>
             </article>
           <article className="experience__details">
