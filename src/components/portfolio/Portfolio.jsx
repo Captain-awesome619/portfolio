@@ -9,46 +9,6 @@ import { experienceanimations } from '../animation'
 import IMG4 from "../../assets/Realator1.png"
 import IMG5 from "../../assets/blog.png"
 
-const data = [
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Check out my blog on packages and technologies I use!',
-    github: 'https://github.com/Captain-awesome619/blog',
-    demo: 'https://my-techstuff-1eb0c6.netlify.app/'
-
-  },
-  {
-    id: 1,
-    image: IMG1,
-    title: 'A multipurpose-app for a Web-development agency',
-    github: 'https://github.com/Captain-awesome619/cuddly-couscous',
-    demo: 'https://glowing-jelly-c2c776.netlify.app/'
-
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: 'The Cafena coffee buisness Web-Application',
-    github: 'https://github.com/Captain-awesome619/coffee-app',
-    demo: 'https://fanciful-starship-a24bfb.netlify.app/'
-  },
-
-  {
-    id: 3,
-    image: IMG3,
-    title: 'An up to date crypto-currency Web-Applicationl',
-    github: 'https://github.com/Captain-awesome619/cryptoverse',
-    demo: 'https://crypto-verse-ac724d.netlify.app/'
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'A Real-Estate Web-App with various options',
-    github: 'https://github.com/Captain-awesome619/Realator',
-    demo: 'https://realator-85d0e6.netlify.app/'
-  }
-]
 
 
  const Portfolio = () => {
@@ -57,7 +17,7 @@ const data = [
       <motion.section id='portfolio'
       ref={element}
       variants={experienceanimations}
-        transition={{type: "tween" ,duration: 1, }}
+        transition={{type: "tween" ,duration: 0.5, }}
         animate = {controls}
       >
         <h5>My Recent Projects</h5>
@@ -88,5 +48,56 @@ const data = [
     )
 
   }
+
+
+  const data = [
+    {
+      id: 5,
+      image: IMG5,
+      title: 'Check out my blog on packages and technologies I use!',
+      github: 'https://github.com/Captain-awesome619/blog',
+      demo: 'https://my-techstuff-1eb0c6.netlify.app/'
+
+    },
+    {
+      id: 1,
+      image: IMG1,
+      title: 'A multipurpose-app for a Web-development agency',
+      github: 'https://github.com/Captain-awesome619/cuddly-couscous',
+      demo: 'https://glowing-jelly-c2c776.netlify.app/'
+
+    },
+    {
+      id: 2,
+      image: IMG2,
+      title: 'The Cafena coffee buisness Web-Application',
+      github: 'https://github.com/Captain-awesome619/coffee-app',
+      demo: 'https://fanciful-starship-a24bfb.netlify.app/'
+    },
+
+    {
+      id: 3,
+      image: IMG3,
+      title: 'An up to date crypto-currency Web-Applicationl',
+      github: 'https://github.com/Captain-awesome619/cryptoverse',
+      demo: 'https://crypto-verse-ac724d.netlify.app/'
+    },
+    {
+      id: 4,
+      image: IMG4,
+      title: 'A Real-Estate Web-App with various options',
+      github: 'https://github.com/Captain-awesome619/Realator',
+      demo: 'https://realator-85d0e6.netlify.app/'
+    }
+  ]
+
+
+
+
+
+
+
+
+
 
   export default Portfolio
