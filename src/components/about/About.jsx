@@ -6,8 +6,7 @@ import {SiBookstack} from "react-icons/si"
 import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
 import { Aboutanimation } from '../animation'
-
-
+import { experienceanimations } from '../animation'
 
 const About = () => {
 
@@ -17,7 +16,7 @@ const About = () => {
 
   return (
     <motion.section  id='about' ref={element}
-    variants={Aboutanimation}
+    variants={experienceanimations}
       transition={{type: "tween" ,duration: 1}}
       animate = {controls}>
       <h5>Get To Know</h5>

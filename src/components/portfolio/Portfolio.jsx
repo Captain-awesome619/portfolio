@@ -59,7 +59,7 @@ const data = [
       <motion.section id='portfolio'
       ref={element}
       variants={Aboutanimation}
-        transition={{type: "tween" ,duration: 1, }}
+        transition={{type: "tween" ,duration: 1.2, }}
         animate = {controls}>
         <h5>My Recent Projects</h5>
         <h2>Portfolio</h2>
