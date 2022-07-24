@@ -8,7 +8,7 @@ import emailjs from 'emailjs-com'
 import {AiOutlineTwitter} from'react-icons/ai'
 import { motion } from 'framer-motion';
 import { UseScroll } from '../UseScroll'
-import { Aboutanimation } from '../animation';
+import { experienceanimations } from '../animation';
 
 
 const Contact = () => {
@@ -21,9 +21,9 @@ const Contact = () => {
 
     emailjs.sendForm('service_jlhorip', 'template_itj1w5l', form.current, 'FG1X1e9_G74xzY2qq')
 
-   
 
-    .then( 
+
+    .then(
 (result) =>{
 console.log(result.text);
 alert("sent successfully!");
@@ -39,18 +39,18 @@ alert("sent successfully!");
 
 return(
     <motion.section id='contact'
-    
-    
+
+
     >
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
       <motion.div className="container contact__container"
       ref={element}
-      variants={Aboutanimation}
+      variants={experienceanimations}
         transition={{type: "tween" ,duration: 1}}
         animate = {controls}
-      
+
       >
         <div className="contact__options"
         >

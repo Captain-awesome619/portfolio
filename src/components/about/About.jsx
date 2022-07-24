@@ -5,7 +5,6 @@ import {FaAward} from "react-icons/fa"
 import {SiBookstack} from "react-icons/si"
 import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
-import { Aboutanimation } from '../animation'
 import { experienceanimations } from '../animation'
 
 const About = () => {
