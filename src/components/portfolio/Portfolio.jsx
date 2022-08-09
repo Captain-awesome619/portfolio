@@ -9,7 +9,7 @@ import { experienceanimations } from '../animation'
 import IMG4 from "../../assets/Realator1.png"
 import IMG5 from "../../assets/blog.png"
 import { Aboutanimation } from '../animation'
-
+import IMG6 from "../../assets/estore.png"
 
 const data = [
   {
@@ -18,6 +18,14 @@ const data = [
     title: 'Check out my blog on packages and technologies I use!',
     github: 'https://github.com/Captain-awesome619/blog',
     demo: 'https://my-techstuff-1eb0c6.netlify.app/'
+
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: 'An e-commerce application created using Nextjs and Sanity.io',
+    github: 'https://github.com/Captain-awesome619/Aesomeinc',
+    demo: 'https://awesome-inc-d54ba6.netlify.app/'
 
   },
   {
