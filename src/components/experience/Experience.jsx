@@ -29,21 +29,21 @@ const Experience = () => {
             <BsBookmarkCheckFill className='experience__details-icon'/>
             <div>
             <h4>HTML</h4>
-            <small className="text-light">Experienced</small>
+           
             </div>
             </article>
           <article className="experience__details">
             <BsBookmarkCheckFill  className='experience__details-icon'/>
         <div>
             <h4>CSS</h4>
-            <small className="text-light">Experienced</small>
+
             </div>
             </article>
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon'/>
             <div>
             <h4>Javascript</h4>
-            <small className="text-light">Experienced</small>
+
             </div>
             </article>
             </div>
@@ -57,21 +57,21 @@ const Experience = () => {
             <BsBookmarkCheckFill className='experience__details-icon' />
 <div>
             <h4>NextJS</h4>
-            <small className="text-light">Intermediate</small>
+
             </div>
             </article>
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon' />
             <div>
             <h4>GIT</h4>
-            <small className="text-light">Experienced</small>
+
         </div>
             </article>
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon'/>
             <div>
             <h4>React</h4>
-            <small className="text-light">Experienced</small>
+
             </div>
             </article>
             </div>
@@ -82,22 +82,22 @@ const Experience = () => {
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon' />
 <div>
-            <h4>Web-Styling and responsiveness</h4>
-            <small className="text-light">Experienced</small>
+            <h4>Redux</h4>
+
             </div>
             </article>
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon' />
             <div>
             <h4>API's</h4>
-            <small className="text-light">Experienced</small>
+
         </div>
             </article>
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon'/>
             <div>
             <h4>Web Hosting</h4>
-            <small className="text-light">Experienced</small>
+
             </div>
             </article>
             </div>
