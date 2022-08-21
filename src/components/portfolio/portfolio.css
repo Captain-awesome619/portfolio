@@ -11,7 +11,35 @@
     border: 1px solid transparent;
     transition: var(--transition);
   }
+.segments{
+  display:  flex;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
 
+.segments>h2{
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.segments>h2:hover{
+  transform: scale(1.1);
+}
+.certifications{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.badge{
+  width: 350px;
+  min-height: 250px;
+
+
+}
   .portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
@@ -41,6 +69,14 @@ transform: scale(1.1);
       grid-template-columns: 1fr 1fr;
       gap: 1.2rem;
     }
+    .certifications{
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+    .badge{
+      width: 280px;
+      max-height: 200px;
+    }
   }
 
   /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
@@ -48,5 +84,13 @@ transform: scale(1.1);
     .portfolio__container {
       grid-template-columns: 1fr;
       gap: 1rem;
+    }
+    .certifications{
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .badge{
+      width: 280px;
+      max-height: 200px;
     }
   }

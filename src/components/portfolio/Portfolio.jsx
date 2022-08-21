@@ -5,11 +5,16 @@ import IMG2 from "../../assets/cafena-image2.png"
 import IMG3 from "../../assets/crypt3.png"
 import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
-import { experienceanimations } from '../animation'
 import IMG4 from "../../assets/Realator1.png"
 import IMG5 from "../../assets/blog.png"
 import { Aboutanimation } from '../animation'
 import IMG6 from "../../assets/estore.png"
+import { useState } from 'react'
+import cert1 from "../../assets/download.png"
+import cert2 from "../../assets/badge2.png"
+import cert3 from "../../assets/badge3.png"
+import cert4 from "../../assets/badge4.png"
+import cert5 from "../../assets/badge5.png"
 
 const data = [
   {
@@ -62,19 +67,31 @@ const data = [
 
 
  const Portfolio = () => {
+  const [state, setstate] = useState('projects')
   const [element,controls] = UseScroll();
+
+
+
+const switchstate = (state) => {
+  setstate(state)
+}
+
+
     return (
       <motion.section id='portfolio'
       ref={element}
       variants={Aboutanimation}
         transition={{type: "tween" ,duration: 1.2, }}
         animate = {controls}>
-        <h5>My Recent Projects</h5>
-        <h2>Portfolio</h2>
-
+    <h5>My Recent Projects and Certifications(Please check Resume for Certfication links)</h5>
+    <div className='segments'>
+<h2 onClick={() => switchstate("projects")}>Projects</h2>
+<h2 onClick={() => switchstate("cert")}>Certfications</h2>
+</div>
         <motion.div className="container portfolio__container"
  >
-          {
+
+          { state === "projects" ?
             data.map(({id, image, title, github, demo}) => {
               return (
                 <article key={id} className='portfolio__item'>
@@ -90,7 +107,13 @@ const data = [
               </article>
               )
             })
-          }
+           : <div className='certifications'>
+<img src={cert1} alt="badge" className='badge'/>
+<img src={cert2} alt="badge" className='badge'/>
+<img src={cert3} alt="badge" className='badge'/>
+<img src={cert4} alt="badge" className='badge'/>
+<img src={cert5} alt="badge" className='badge'/>
+           </div>}
         </motion.div>
       </motion.section>
     )
