@@ -5,7 +5,7 @@ import Toggle from '../Toggle/Toggle'
 const CTA = () => {
   return (
     <div>
- <div className='mode'><Toggle   className='tog'/></div>
+ <div className='mode'><Toggle   /></div>
     <div className='cta'>
 
         <a href={CV}download className='btn' id='btn-light'>My Resume</a>
