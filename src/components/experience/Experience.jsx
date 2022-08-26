@@ -15,7 +15,7 @@ const Experience = () => {
     <motion.section
     id='experience'>
       <h5>Skills I Possess</h5>
-      <h2> Stack and Technologies I use</h2>
+      <h2> Stack and Technologies </h2>
       <motion.div className=" container experience__container"
       ref={element}
       variants={experienceanimations}
