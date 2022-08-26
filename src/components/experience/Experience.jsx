@@ -15,7 +15,7 @@ const Experience = () => {
     <motion.section
     id='experience'>
       <h5>Skills I Possess</h5>
-      <h2>My Experience</h2>
+      <h2> Stack and Technologies I use</h2>
       <motion.div className=" container experience__container"
       ref={element}
       variants={experienceanimations}
@@ -29,7 +29,7 @@ const Experience = () => {
             <BsBookmarkCheckFill className='experience__details-icon'/>
             <div>
             <h4>HTML</h4>
-           
+
             </div>
             </article>
           <article className="experience__details">
