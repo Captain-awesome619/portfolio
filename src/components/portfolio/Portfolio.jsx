@@ -15,7 +15,7 @@ import cert2 from "../../assets/badge2.png"
 import cert3 from "../../assets/badge3.png"
 import cert4 from "../../assets/badge4.png"
 import cert5 from "../../assets/badge6.png"
-
+import cert6 from "../../assets/testdome.png"
 const data = [
   {
     id: 5,
@@ -113,6 +113,7 @@ const switchstate = (state) => {
 <img src={cert3} alt="badge" className='badge'/>
 <img src={cert4} alt="badge" className='badge'/>
 <img src={cert5} alt="badge" className='badge'/>
+<img src={cert6} alt="badge" className='badge'/>
            </div>}
         </motion.div>
       </motion.section>
