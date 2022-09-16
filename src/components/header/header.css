@@ -12,7 +12,7 @@ header {
 
   /* =============== CTA ============== */
   .cta {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     display: flex;
     gap: 1.3rem;
     justify-content: center;
@@ -20,15 +20,22 @@ header {
 
 
 
-  .mode{
-
-    display: flex;
-    padding: 0px;
-    width: 10rem;
-    position: absolute;
-    top: 17%;
-    left: 47%;
+  .toptog{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
   }
+
+ .mode{
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0px;
+  width: 10rem;
+
+ }
   /* =============== HEADER SOCIALS ============== */
   .header__socials {
     display: flex;
@@ -109,7 +116,7 @@ header {
       height: 88vh;
     }
     .cta {
-      margin-top: 2.5rem;
+      margin-top: 1.5rem;
       display: grid;
       gap: 1.2rem;
       justify-content: center;
@@ -136,7 +143,7 @@ header {
       display: none;
     }
     .cta {
-      margin-top: 4rem;
+      margin-top: 2rem;
       display: grid;
       gap: 1.2rem;
       justify-content: center;

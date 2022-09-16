@@ -85,8 +85,8 @@ const switchstate = (state) => {
         animate = {controls}>
     <h5>My Recent Projects and Certifications(Please check Resume for Certfication links)</h5>
     <div className='segments'>
-<h2 onClick={() => switchstate("projects")}>Projects</h2>
-<h2 onClick={() => switchstate("cert")}>Certfications</h2>
+<h2 onClick={() => switchstate("projects")} className={ state ==="projects" ? "projectactive" : ""}>Projects</h2>
+<h2 onClick={() => switchstate("cert")} className={ state ==="cert" ? "certactive" : ""}>Certfications</h2>
 </div>
         <motion.div className="container portfolio__container"
  >

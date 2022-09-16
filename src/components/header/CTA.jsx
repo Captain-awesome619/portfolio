@@ -4,7 +4,7 @@ import CV from '../../assets/FRONTEND-DEVELOPER-RES.pdf'
 import Toggle from '../Toggle/Toggle'
 const CTA = () => {
   return (
-    <div>
+    <div className='toptog'>
  <div className='mode'><Toggle   /></div>
     <div className='cta'>
 
