@@ -22,13 +22,13 @@ const Header = () => {
      <h6 className="text-light">A FrontEnd Developer</h6>
 
      </div>
-     
+
      <CTA />
      <HeaderSocials />
 
      <div className='me'>
 
-       <img src={ME}alt='ME' />
+       <img src={ME}alt='ME' className='meimg' />
      </div>
 
      <a href="#contact" className='scroll__down'>Scroll Down</a>
