@@ -88,7 +88,7 @@ const switchstate = (state) => {
 </div>
         <motion.div className="container portfolio__container"
 variants={reveal}
-transition={{duration: 1 }}
+transition={{duration:0.5 }}
 animate = {controls}
 >
           { state === "projects" ?
