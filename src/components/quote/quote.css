@@ -1,0 +1,45 @@
+.quote{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.qot2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btnqot{
+    display: flex;
+    justify-content: flex-end;
+    width: max-content;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btnqot:hover{
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.saying{
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 600px) {
+    .saying{
+        font-family: 400px;
+        font-size: 14px;
+    }
+}

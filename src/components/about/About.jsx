@@ -5,7 +5,7 @@ import {FaAward} from "react-icons/fa"
 import {SiBookstack} from "react-icons/si"
 import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
-import { experienceanimations } from '../animation'
+import {  reveal } from '../animation'
 
 const About = () => {
 
@@ -14,13 +14,19 @@ const About = () => {
 
 
   return (
-    <motion.section  id='about' ref={element}
-    variants={experienceanimations}
-      transition={{type: "tween" ,duration: 1}}
-      animate = {controls}>
-      <h5>Get To Know</h5>
+    <motion.section  id='about'
+    ref={element}
+    >
+      <h5 >Get To Know</h5>
       <h2 >About Me</h2>
-    <motion.div className='container about__container'>
+    <motion.div className='container about__container'
+
+ variants={reveal}
+   transition={{duration: 1}}
+   animate = {controls}
+
+
+    >
       <motion.div className="about__me">
       <div className="about__me-image">
       <img src= {ME} alt=" "/>

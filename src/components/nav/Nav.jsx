@@ -1,27 +1,34 @@
-import React from 'react'
+import React from "react";
 import './nav.css'
 import {BiHome,BiUser,BiBook} from 'react-icons/bi'
-import {RiCustomerService2Line} from 'react-icons/ri'
 import {MdOutlineContactPage} from 'react-icons/md'
-import { useState } from 'react'
 import {GiBriefcase} from 'react-icons/gi'
-
+import ScrollSpy from "react-scrollspy-navigation"
+import { createRef } from "react";
+import {FaServicestack} from "react-icons/fa"
 
 
 
 const Nav = () => {
-  const [activeNav,setActiveNav] = useState ('#')
-  return (
 
+
+  return (
     <nav>
-<a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><BiHome/></a>
-    <a  href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}> <BiUser/> </a>
-    <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
-  
-  <a href="#portfolio"onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><GiBriefcase/></a>
-     <a  href="#contact"onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><MdOutlineContactPage/></a>
-    </nav>
+<ScrollSpy>
+<a ref={createRef()} href="#head"><BiHome/> </a>
+    <a ref={createRef()} href="#about"  > <BiUser/> </a>
+    <a href="#experience" ref={createRef()} ><BiBook/></a>
+    <a href="#services" ref={createRef()} ><FaServicestack/></a>
+  <a href="#portfolio" ref={createRef()}  ><GiBriefcase/></a>
+     <a href="#contact"  ref={createRef()}><MdOutlineContactPage/></a>
+     </ScrollSpy>
+     </nav>
+
   )
+
+
+
+
 }
 
 export default Nav

@@ -12,6 +12,7 @@ nav{
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    scroll-behavior: smooth;
 }
 nav a{
     background: transparent;
@@ -20,15 +21,15 @@ nav a{
     display: flex;
     color: var(--color-light);
     font-size: 1.1rem;
+    scroll-behavior: smooth;
 }
 
 nav a:hover{
     background: rgba(0, 0, 0, 0.3);
 }
 
-nav a.active{
+.active{
     background: var(--color-bg);
     color: var(--color-white);
 }
-
 

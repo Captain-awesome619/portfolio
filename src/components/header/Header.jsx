@@ -1,17 +1,20 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/picture5.jpg'
 import HeaderSocials from './HeaderSocials'
-import Toggle from '../Toggle/Toggle'
+import {Link} from "react-scroll"
+import Quote from '../quote/Quote'
 
 
 
 const Header = () => {
+
+
+
   return (
-
+<div id='head'>
     <header>
-
    <div className="container header__container">
 
      <div className='inner'>
@@ -25,18 +28,27 @@ const Header = () => {
 
      <CTA />
      <HeaderSocials />
-
+<div>
      <div className='me'>
 
        <img src={ME}alt='ME' className='meimg' />
      </div>
 
-     <a href="#contact" className='scroll__down'>Scroll Down</a>
+</div>
+
+
+
+
+     <Link to="contact"   smooth={500} spy={true}  className='scroll__down'>Scroll Down</Link>
 
    </div>
 
-    </header>
 
+    </header>
+    <div className='qot'>
+    <Quote/>
+    </div>
+</div>
   )
 }
 

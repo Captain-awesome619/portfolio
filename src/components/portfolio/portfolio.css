@@ -10,6 +10,10 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
   }
 .segments{
   display:  flex;
@@ -37,6 +41,7 @@
 .badge{
   width: 350px;
   min-height: 250px;
+  max-height: 250px;
 
 
 }
@@ -50,8 +55,11 @@
     border-radius: 2.0rem;
     overflow: hidden;
 transform: scale(1.1);
-
   }
+.portimage{
+  max-height: 200px;
+  min-height: 200px;
+}
 
   .portfolio__item h3 {
     margin: 1.4rem 0 2rem;

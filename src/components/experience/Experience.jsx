@@ -2,9 +2,9 @@ import React from 'react'
 import './experience.css'
 import {BsBookmarkCheckFill} from "react-icons/bs"
 import { motion } from 'framer-motion'
-import { experienceanimations } from '../animation'
+import {  reveal2 } from '../animation'
 import { UseScroll } from '../UseScroll'
-import { InView } from "react-intersection-observer";
+
 
 
 const Experience = () => {
@@ -13,13 +13,15 @@ const Experience = () => {
  return (
 
     <motion.section
-    id='experience'>
+    id='experience'
+    ref={element}
+    >
       <h5>Skills I Possess</h5>
       <h2> Stack and Technologies </h2>
       <motion.div className=" container experience__container"
-      ref={element}
-      variants={experienceanimations}
-        transition={{type: "tween" ,duration: 1, }}
+
+      variants={reveal2}
+        transition={{duration: 1, }}
         animate = {controls}>
 
         <div className="experience__frontend">

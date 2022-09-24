@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
 import IMG4 from "../../assets/Realator1.png"
 import IMG5 from "../../assets/blog.png"
-import { Aboutanimation } from '../animation'
+import {  reveal} from '../animation'
 import IMG6 from "../../assets/estore.png"
 import { useState } from 'react'
 import cert1 from "../../assets/download.png"
@@ -80,25 +80,27 @@ const switchstate = (state) => {
     return (
       <motion.section id='portfolio'
       ref={element}
-      variants={Aboutanimation}
-        transition={{type: "tween" ,duration: 1.2, }}
-        animate = {controls}>
+     >
     <h5>My Recent Projects and Certifications(Please check Resume for Certfication links)</h5>
     <div className='segments'>
 <h2 onClick={() => switchstate("projects")} className={ state ==="projects" ? "projectactive" : ""}>Projects</h2>
 <h2 onClick={() => switchstate("cert")} className={ state ==="cert" ? "certactive" : ""}>Certfications</h2>
 </div>
         <motion.div className="container portfolio__container"
- >
-
+variants={reveal}
+transition={{duration: 1 }}
+animate = {controls}
+>
           { state === "projects" ?
             data.map(({id, image, title, github, demo}) => {
               return (
                 <article key={id} className='portfolio__item'>
+<div>
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title} />
+                  <img src={image} alt={title} className="portimage" />
                 </div>
                 <h3>{title}</h3>
+</div>
                 <div className="portfolio__item-cta">
                 <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
                   <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
