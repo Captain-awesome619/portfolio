@@ -27,6 +27,9 @@
 ::-webkit-scrollbar{
     display: none;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background:var(--color-bg);
@@ -34,6 +37,7 @@ body{
     color: var(--color-white);
     background-image: url(../src/assets/bg-texture.png);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .container{
     width: var(--container-width-lg);
