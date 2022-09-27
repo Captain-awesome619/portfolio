@@ -7,11 +7,11 @@ nav{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0.5rem;
+    bottom: 0.1rem;
     display:flex;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
 }
 nav a{
     background: transparent;
