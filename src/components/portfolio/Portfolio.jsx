@@ -11,7 +11,7 @@ import {  reveal} from '../animation'
 import IMG6 from "../../assets/estore.png"
 import { useState } from 'react'
 import cert1 from "../../assets/download.png"
-import cert2 from "../../assets/badge2.png"
+import cert2 from "../../assets/frontend.png"
 import cert3 from "../../assets/badge3.png"
 import cert4 from "../../assets/badge4.png"
 import cert5 from "../../assets/badge6.png"
@@ -88,7 +88,7 @@ const switchstate = (state) => {
 </div>
         <motion.div className="container portfolio__container"
 variants={reveal}
-transition={{duration:0.5 }}
+transition={{duration:1 }}
 animate = {controls}
 >
           { state === "projects" ?
