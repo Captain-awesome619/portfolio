@@ -7,6 +7,11 @@ const Quote = () => {
 
     useEffect(() => {
       getquote()
+
+      const interval = setInterval(() => { getquote()
+      }, 11000);
+      return () => clearInterval(interval);
+
     }, []);
 
   const getquote = () =>{
