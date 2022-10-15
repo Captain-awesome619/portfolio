@@ -7,11 +7,6 @@ const Quote = () => {
 
     useEffect(() => {
       getquote()
-
-      const interval = setInterval(() => { getquote()
-      }, 11000);
-      return () => clearInterval(interval);
-
     }, []);
 
   const getquote = () =>{
@@ -22,7 +17,6 @@ const Quote = () => {
           let dataQuotes = data.quotes;
           let randomNum = Math.floor(Math.random() * dataQuotes.length);
           let randomQuote = dataQuotes[randomNum];
-
           setQuote(randomQuote.quote);
           setAuthor(randomQuote.author);
         })
