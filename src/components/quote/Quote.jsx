@@ -26,8 +26,6 @@ const Quote = () => {
     getquote();
   }
 
-
-
   return (
     <div className='quotebox'>
     <div className='quote'>
