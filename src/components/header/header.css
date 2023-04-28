@@ -133,6 +133,11 @@ justify-content: center;
     header {
       height: 88vh;
     }
+    .qot{
+      text-align: center;
+    width: 250px;
+    height: 200px;
+    }
     .cta {
       margin-top: 1.5rem;
       display: grid;
@@ -155,7 +160,11 @@ justify-content: center;
       height: 100vh;
       padding-top: 4rem;
     }
-    
+    .qot{
+      text-align: center;
+    width: 250px;
+    height: 200px;
+    }
     .header__socials,
     .scroll__down {
       display: none;

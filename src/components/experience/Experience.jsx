@@ -48,6 +48,13 @@ const Experience = () => {
 
             </div>
             </article>
+          <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <div>
+            <h4>Typecript</h4>
+
+            </div>
+            </article>
             </div>
 </div>
 
