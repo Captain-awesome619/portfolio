@@ -6,6 +6,9 @@ import { ThemeProvider } from "./Context"
 
 ReactDOM.render(
 <ThemeProvider>
-<App/>,
+    <div>
+<App/>
+</div>
 </ThemeProvider>,
+
 document.getElementById("root"));

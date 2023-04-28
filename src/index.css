@@ -24,18 +24,24 @@
     --container-width-sm: 90%;
 }
 
-
+.contain{
+    margin: 0;
+}
 html{
     overflow-x: hidden;
+margin: 0;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
     background:var(--color-bg);
     line-height: 1.7;
-    color: var(--color-white);
+    color: var(--color-white) ;
     background-image: url(../src/assets/bg-texture.png);
     scroll-behavior: smooth;
     overflow-x: hidden;
+margin: 0;
+
 }
 .container{
     width: var(--container-width-lg);
@@ -99,6 +105,9 @@ img{
     display: block;
     width: 95%;
     object-fit: cover;
+}
+#shadow-host-companion{
+    display: none;
 }
 /* for medium devices(tablets) */
 @media screen and(max-width: 1024px) {

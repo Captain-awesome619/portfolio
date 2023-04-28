@@ -23,7 +23,7 @@ const App = () => {
 
 
   return (
-    <div
+    <div className='contain'
     style={{
       background: darkMode ? "black" : "",
       color: darkMode ? "white" : "",
@@ -32,7 +32,6 @@ const App = () => {
       <Header />
       <Nav />
       <About  />
-
       <Experience  />
       <Services/>
       <Portfolio />

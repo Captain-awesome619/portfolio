@@ -28,10 +28,13 @@ const Quote = () => {
 
   return (
     <div className='quotebox'>
+<div className='margin'>
     <div className='quote'>
     <div ><p className='saying'>"{quote}"</p></div>
-<div className='qot2'>
     <div className='qotaut'><p className='saying'>{author}</p></div>
+</div>
+<div className='qot2'>
+
     <button className='btnqot' onClick={handleClick}><p>New Quote</p></button>
     </div>
     </div>

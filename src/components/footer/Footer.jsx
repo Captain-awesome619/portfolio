@@ -6,6 +6,7 @@ import {IoLogoTwitter} from 'react-icons/io'
 import {Link} from "react-scroll"
 const Footer = () => {
   return (
+<div className="">
     <footer>
       <ul className='permalinks'>
         <li><Link smooth={500} spy={true} to="head" >Home</Link></li>
@@ -27,6 +28,7 @@ const Footer = () => {
         <small>&copy; Ogunsola toluwalase. All rights reserved.</small>
       </div>
     </footer>
+</div>
   )
 }
 

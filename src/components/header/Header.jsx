@@ -46,8 +46,8 @@ const Header = () => {
 
     </header>
     <div className='qot'>
-    <Quote/>
-    </div>
+    <Quote className="qot2"/>
+</div>
 </div>
   )
 }
