@@ -40,13 +40,9 @@ const Header = () => {
 
 
      <Link to="contact" smooth={500} spy={true}  className='scroll__down'>Scroll Down</Link>
-
    </div>
-
-
     </header>
-
-    <Quote className="qot2"/>
+    <Quote className=""/>
 
 </div>
   )
