@@ -85,7 +85,12 @@ justify-content: center;
     overflow: hidden;
     padding: 12rem 0.5rem 0.5rem 1.5rem;
   }
-
+.qottt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
   /* =============== SCROLL DOWN ============== */
   .scroll__down {
     position: absolute;
@@ -134,9 +139,7 @@ justify-content: center;
       height: 88vh;
     }
     .qot{
-      text-align: center;
-    width: 250px;
-    height: 200px;
+
     }
     .cta {
       margin-top: 1.5rem;
@@ -160,10 +163,8 @@ justify-content: center;
       height: 100vh;
       padding-top: 4rem;
     }
-    .qot{
-      text-align: center;
-    width: 250px;
-    height: 200px;
+    .qottt{
+
     }
     .header__socials,
     .scroll__down {

@@ -8,12 +8,7 @@
 .margin{
 
 }
-.qot2{
-    display: flex;
-    gap: 0rem;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 
 .btnqot{
     display: flex;
@@ -40,7 +35,7 @@
     font-size: 25px;
     color: var(--color-primary);
     text-align: center;
-    text-wrap: wrap;
+
 }
 
 @media screen and (max-width: 600px) {
