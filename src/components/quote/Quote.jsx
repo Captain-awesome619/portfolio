@@ -27,7 +27,7 @@ const Quote = () => {
   }
 
   return (
-    <div className='quotebox'>
+    <div className='quotebox33'>
 
     <div className='quote'>
     <div ><p className='saying'>"{quote}"</p></div>
@@ -37,7 +37,7 @@ const Quote = () => {
 
     <button className='btnqot' onClick={handleClick}><p>New Quote</p></button>
     </div>
- 
+
 
          </div>
 
