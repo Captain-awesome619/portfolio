@@ -16,6 +16,7 @@ import cert3 from "../../assets/badge3.png"
 import cert4 from "../../assets/badge4.png"
 import cert5 from "../../assets/badge6.png"
 import cert6 from "../../assets/testdome.png"
+import IMG7 from "../../assets/slide7.png"
 const data = [
   {
     id: 5,
@@ -23,6 +24,14 @@ const data = [
     title: 'Check out my blog on packages and technologies I use!',
     github: 'https://github.com/Captain-awesome619/blog',
     demo: 'https://dark-vale-b357a0.netlify.app/'
+
+  },
+  {
+    id: 7,
+    image: IMG7,
+    title: 'A simple product landing page,created using Tailwindcss',
+    github: 'https://github.com/Captain-awesome619/landing_page',
+    demo: 'https://store-landing-page.netlify.app/'
 
   },
   {

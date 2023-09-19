@@ -39,15 +39,15 @@ const Header = () => {
 
 
 
-     <Link to="contact"   smooth={500} spy={true}  className='scroll__down'>Scroll Down</Link>
+     <Link to="contact" smooth={500} spy={true}  className='scroll__down'>Scroll Down</Link>
 
    </div>
 
 
     </header>
-    <div className='qot'>
+
     <Quote className="qot2"/>
-</div>
+
 </div>
   )
 }
