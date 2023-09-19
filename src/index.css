@@ -115,7 +115,7 @@ img{
         width: var(--container-width-md);
     }
     section{
-        margin-top: 6rem;
+        margin-top: 3rem;
     }
 }
 /* for small devices(mobile phones) */
