@@ -83,6 +83,15 @@ const Experience = () => {
 
             </div>
             </article>
+
+            <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <div>
+            <h4>ChakraUI</h4>
+
+            </div>
+            </article>
+
             </div>
             </div>
           <div  className="experience__design">
@@ -109,8 +118,47 @@ const Experience = () => {
 
             </div>
             </article>
+
+            <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <div>
+            <h4>Tailwindcss</h4>
+
+            </div>
+            </article>
+
             </div>
             </div>
+
+            <div  className="experience__design">
+            <h3>Web Development</h3>
+            <div className='experience__content'>
+          <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon' />
+<div>
+            <h4>MongoDB</h4>
+
+            </div>
+            </article>
+          <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon' />
+            <div>
+            <h4>Express</h4>
+
+        </div>
+            </article>
+          <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <div>
+            <h4>SupaBase</h4>
+
+            </div>
+            </article>
+
+
+            </div>
+            </div>
+
         </motion.div>
 
 

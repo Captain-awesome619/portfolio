@@ -69,7 +69,7 @@ return(
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
-            <a href="https://api.whatsapp.com/send?phone=+234 816 7160 663" target="_blank" rel='noreferrer'>Send a message</a>
+            <a href="https://Wa.me/+2348167160663" target="_blank" rel='noreferrer'>Send a message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
