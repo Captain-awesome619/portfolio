@@ -42,7 +42,7 @@ const About = () => {
             <article className="about__card">
               < SiBookstack className="about__icon"/>
               <h5>Expertise</h5>
-              <small>HTML CSS Javascript(React,NextJS),TailwindCSS,ChakraUI</small>
+              <small>HTML CSS Javascript(React,NextJS),<br></br>TailwindCSS,ChakraUI</small>
               </article>
             </div>
             <p >Hello there,my name is Ogunsola Toluwalase.I'm a Front-end developer who specializes in the creation of responsive web-applications and landing pages.
