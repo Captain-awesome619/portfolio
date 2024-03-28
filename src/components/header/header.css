@@ -165,7 +165,7 @@ padding-bottom: 1rem;
   /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
 @media screen and (max-width: 578px) {
     header {
-      height: 100vh;
+    
       padding-top: 4rem;
     }
     .qottt{
