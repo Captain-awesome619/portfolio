@@ -75,15 +75,22 @@ justify-content: center;
   /* =============== ME ============== */
   .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
+    width: max-content;
+    height: fit-content;
     position: relative;
+    margin-top: 3rem;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 3rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 12rem 0.5rem 0.5rem 1.5rem;
+  }
+
+  .meimg{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 1rem;
   }
 .qottt{
   display: flex;
@@ -154,7 +161,7 @@ justify-content: center;
   left: 45%;
 }
 .me{
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
   }
   /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
