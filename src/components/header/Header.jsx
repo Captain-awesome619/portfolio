@@ -39,6 +39,7 @@ const Header = () => {
    </div>
     </header>
 
+  <Quote/>
 </div>
   )
 }
