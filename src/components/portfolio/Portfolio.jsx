@@ -77,17 +77,12 @@ const data = [
   }
 ]
 
-
  const Portfolio = () => {
   const [state, setstate] = useState('projects')
   const [element,controls] = UseScroll();
-
-
-
 const switchstate = (state) => {
   setstate(state)
 }
-
 const settings = {
   dots: true,
   speed: 1000,
@@ -109,9 +104,9 @@ const settings = {
 <motion.div
 
 
-className='over'>
+className='overrr'>
         <div 
-className={state === "projects" ? "con" : "hid"}
+className={state === "projects" ? "conn" : "hid"}
 >
 <Slider {...settings}>
           { state === "projects" ?
@@ -137,7 +132,7 @@ className={state === "projects" ? "con" : "hid"}
             </div>
            
             { state == "cert" ? 
-              <div className={state === 'cert' ? "con" : "hid"}>
+              <div className={state === 'cert' ? "conn" : "hid"}>
               <Slider {...settings}>
 <img src={cert1} alt="badge" className='badge'/>
 <img src={cert2} alt="badge" className='badge'/>

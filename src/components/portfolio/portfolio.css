@@ -3,16 +3,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
   }
-.con{
-  width: 500px;
- 
+.conn{
+  width: 800px;
 }
 .slick-slide > div{
 
 margin-right: 10px;
 margin-left: 10px;
 }
-.over{
+
+.overrr{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,9 +54,9 @@ margin-left: 10px;
 }
 
 .badge{
-  width: 350px;
-  min-height: 350px;
-  max-height: 350px;
+  max-width: 450px;
+  min-height: 300px;
+  max-height: 400px;
 }
 .hid{
   display: none;
@@ -109,7 +109,7 @@ transform: scale(1.1);
       max-height: 220px;
     }
   }
-.con{
+.conn{
   width: 500px;
 }
   /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
@@ -123,10 +123,10 @@ transform: scale(1.1);
       gap: 1rem;
     }
     .badge{
-      width: 320px;
-      max-height: 220px;
+      max-width: 300px;
+    max-height: 300px;
     }
-    .con{
-      width: 300px;
+    .conn{
+      max-width: 350px;
     }
   }
