@@ -17,6 +17,9 @@ import cert4 from "../../assets/badge4.png"
 import cert5 from "../../assets/badge6.png"
 import cert6 from "../../assets/testdome.png"
 import IMG7 from "../../assets/slide7.png"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 const data = [
   {
     id: 5,
@@ -85,7 +88,15 @@ const switchstate = (state) => {
   setstate(state)
 }
 
-
+const settings = {
+  dots: true,
+  speed: 1000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+};
     return (
       <motion.section id='portfolio'
       ref={element}
@@ -95,11 +106,11 @@ const switchstate = (state) => {
 <h2 onClick={() => switchstate("projects")} className={ state ==="projects" ? "projectactive" : ""}>Projects</h2>
 <h2 onClick={() => switchstate("cert")} className={ state ==="cert" ? "certactive" : ""}>Certfications</h2>
 </div>
-        <motion.div className="container portfolio__container"
-variants={reveal}
-transition={{duration:1 }}
-animate = {controls}
+<motion.div className='over'>
+        <div 
+className={state === "projects" ? "con" : "hid"}
 >
+<Slider {...settings}>
           { state === "projects" ?
             data.map(({id, image, title, github, demo}) => {
               return (
@@ -118,15 +129,26 @@ animate = {controls}
               </article>
               )
             })
-           : <div className='certifications'>
+           : ""} 
+           </Slider>
+            </div>
+           
+            { state == "cert" ? 
+              <div className={state === 'cert' ? "con" : "hid"}>
+              <Slider {...settings}>
 <img src={cert1} alt="badge" className='badge'/>
 <img src={cert2} alt="badge" className='badge'/>
 <img src={cert3} alt="badge" className='badge'/>
 <img src={cert4} alt="badge" className='badge'/>
 <img src={cert5} alt="badge" className='badge'/>
 <img src={cert6} alt="badge" className='badge'/>
-           </div>}
-        </motion.div>
+</Slider>
+</div>
+ : ""}
+    
+ 
+           </motion.div>
+            
       </motion.section>
     )
 

@@ -3,6 +3,21 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
   }
+.con{
+  width: 500px;
+ 
+}
+.slick-slide > div{
+
+margin-right: 10px;
+margin-left: 10px;
+}
+.over{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
 
   .portfolio__item {
     background: var(--color-bg-variant);
@@ -40,10 +55,11 @@
 
 .badge{
   width: 350px;
-  min-height: 250px;
-  max-height: 250px;
-
-
+  min-height: 350px;
+  max-height: 350px;
+}
+.hid{
+  display: none;
 }
   .portfolio__item:hover {
     border-color: var(--color-primary-variant);
@@ -57,7 +73,7 @@
 transform: scale(1.1);
   }
 .portimage{
-  max-height: 200px;
+  max-height: 300px;
   min-height: 200px;
 }
 
@@ -93,7 +109,9 @@ transform: scale(1.1);
       max-height: 220px;
     }
   }
-
+.con{
+  width: 500px;
+}
   /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
   @media screen and (max-width: 600px) {
     .portfolio__container {
@@ -107,5 +125,8 @@ transform: scale(1.1);
     .badge{
       width: 320px;
       max-height: 220px;
+    }
+    .con{
+      width: 300px;
     }
   }
