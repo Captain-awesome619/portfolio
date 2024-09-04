@@ -95,7 +95,7 @@ const settings = {
   slidesToScroll: 1,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 5000,
 };
     return (
       <motion.section id='portfolio'
@@ -106,7 +106,10 @@ const settings = {
 <h2 onClick={() => switchstate("projects")} className={ state ==="projects" ? "projectactive" : ""}>Projects</h2>
 <h2 onClick={() => switchstate("cert")} className={ state ==="cert" ? "certactive" : ""}>Certfications</h2>
 </div>
-<motion.div className='over'>
+<motion.div
+
+
+className='over'>
         <div 
 className={state === "projects" ? "con" : "hid"}
 >
