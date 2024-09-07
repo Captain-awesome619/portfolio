@@ -17,10 +17,21 @@ import cert4 from "../../assets/badge4.png"
 import cert5 from "../../assets/badge6.png"
 import cert6 from "../../assets/testdome.png"
 import IMG7 from "../../assets/slide7.png"
+import IMG8 from "../../assets/aora2.jpg"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Apk from "../../assets/application-fe0dec7c-59df-49d6-a3c1-a90af742034e.apk"
 const data = [
+
+  {
+    id: 8,
+    image: IMG8,
+    title: 'A Fullstack Mobile application that lets you upload and watch Videos',
+    github: 'https://github.com/Captain-awesome619/awesometube-mobile-App',
+    demo: Apk
+
+  },
   {
     id: 5,
     image: IMG5,
