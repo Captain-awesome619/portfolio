@@ -37,7 +37,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon"/>
               <h5>Experience</h5>
-              <small>4 Years+ Web-Development Experience</small>
+              <small>4 Years+ Frontend development Experience</small>
               </article>
             <article className="about__card">
               < SiBookstack className="about__icon"/>
@@ -45,7 +45,7 @@ const About = () => {
               <small>HTML CSS Javascript(React,NextJS),<br></br>TailwindCSS,ChakraUI</small>
               </article>
             </div>
-            <p >Hello there,my name is Ogunsola Toluwalase.I'm a Front-end developer who specializes in the creation of responsive web-applications and landing pages.
+            <p >Hello there,my name is Ogunsola Toluwalase.I'm a Front-end developer who specializes in the creation of responsive web and mobile applications and landing pages.
               I posses very comprehensive knowledge of the Front-end development field,the utilization of frame works,API's and content creation platforms such as GraphCMS and Sanity.io.
               I would very much LOVE to work with you.</p>
               <a href='#contact' className='btn btn-primary'>Let's have a quick CHAT</a>

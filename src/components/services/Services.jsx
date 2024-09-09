@@ -23,6 +23,21 @@ const Services = () => {
          <h3>Web Development</h3>
          </div>
          <ul className='service__list'>
+
+
+         <li className='serlist'>
+
+<p>
+  Creation of custom Web-Applications and Landing-Pages.
+</p>
+</li>
+
+<li className='serlist'>
+
+<p>
+Creation of smooth and responsive mobile-Applications .
+</p>
+</li>
          <li className='serlist'>
 
            <p>
@@ -53,12 +68,8 @@ const Services = () => {
              Creation of  responsive and smooth E-commerce Web-Apps.
            </p>
          </li>
-         <li className='serlist'>
+         
 
-           <p>
-             Creation of custom Web-Applications and Landing-Pages.
-           </p>
-         </li>
          </ul>
           </article>
           {/* end of web development */}

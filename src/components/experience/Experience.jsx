@@ -51,7 +51,7 @@ const Experience = () => {
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon'/>
             <div>
-            <h4>Typecript</h4>
+            <h4>Typescript</h4>
 
             </div>
             </article>
@@ -69,13 +69,7 @@ const Experience = () => {
 
             </div>
             </article>
-          <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon' />
-            <div>
-            <h4>GIT</h4>
-
-        </div>
-            </article>
+         
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon'/>
             <div>
@@ -84,14 +78,20 @@ const Experience = () => {
             </div>
             </article>
 
+            
+
             <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon'/>
             <div>
-            <h4>ChakraUI</h4>
-
+            <h4>React Native</h4>
             </div>
             </article>
-
+            <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <div>
+            <h4>Appwrite</h4>
+            </div>
+            </article>
             </div>
             </div>
           <div  className="experience__design">
@@ -111,12 +111,23 @@ const Experience = () => {
 
         </div>
             </article>
-          <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
-            <div>
-            <h4>Web Hosting</h4>
+         
 
-            </div>
+            <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon' />
+            <div>
+            <h4>Sanityio</h4>
+
+        </div>
+            </article>
+
+
+            <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon' />
+            <div>
+            <h4>Graphcms</h4>
+
+        </div>
             </article>
 
             <article className="experience__details">
@@ -127,11 +138,20 @@ const Experience = () => {
             </div>
             </article>
 
+            <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <div>
+            <h4>ChakraUI</h4>
+
+            </div>
+            </article>
+
+
             </div>
             </div>
 
             <div  className="experience__design">
-            <h3>Web Development</h3>
+            <h3>Tracking and Backend Tools</h3>
             <div className='experience__content'>
           <article className="experience__details">
             <BsBookmarkCheckFill className='experience__details-icon' />
@@ -155,6 +175,21 @@ const Experience = () => {
             </div>
             </article>
 
+            <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon' />
+            <div>
+            <h4>GIT</h4>
+
+        </div>
+            </article>
+
+            <article className="experience__details">
+            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <div>
+            <h4>Web Hosting</h4>
+
+            </div>
+            </article>
 
             </div>
             </div>
