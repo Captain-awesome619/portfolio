@@ -27,7 +27,7 @@ const data = [
   {
     id: 8,
     image: IMG8,
-    title: 'The downloadable APK file for Fullstack Android Mobile application that lets you upload and watch Videos',
+    title: 'The downloadable APK file for a Fullstack Android Mobile application that lets you upload and watch Videos',
     github: 'https://github.com/Captain-awesome619/awesometube-mobile-App',
     demo: Apk
 
