@@ -48,7 +48,7 @@ const About = () => {
             <p >Hello there,my name is Ogunsola Toluwalase.I'm a Front-end developer who specializes in the creation of responsive web and mobile applications and landing pages.
               I posses very comprehensive knowledge of the Front-end development field,the utilization of frame works,API's and content creation platforms such as GraphCMS and Sanity.io.
               I would very much LOVE to work with you.</p>
-              <a href='#contact' className='btn btn-primary'>Let's have a quick CHAT</a>
+              <a href='https://dark-vale-b357a0.netlify.app/' className='btn btn-primary'>Check out my Blog!</a>
           </motion.div>
         </motion.div>
     </motion.section>
