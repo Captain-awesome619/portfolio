@@ -95,13 +95,12 @@ const switchstate = (state) => {
   setstate(state)
 }
 const settings = {
-  dots: true,
   speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 6000,
 };
     return (
       <motion.section id='portfolio'
