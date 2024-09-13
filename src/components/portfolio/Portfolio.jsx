@@ -51,7 +51,7 @@ const data = [
   {
     id: 6,
     image: IMG6,
-    title: 'An e-commerce application created using Nextjs and Sanity.io',
+    title: 'A Full-Stack e-commerce application created using Nextjs and Sanity.io',
     github: 'https://github.com/Captain-awesome619/Aesomeinc',
     demo: 'https://awesome-inc-d54ba6.netlify.app/'
 
