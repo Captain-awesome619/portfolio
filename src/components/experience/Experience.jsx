@@ -8,7 +8,6 @@ import { UseScroll } from '../UseScroll'
 
 
 const Experience = () => {
-
   const [element,controls] = UseScroll();
  return (
 

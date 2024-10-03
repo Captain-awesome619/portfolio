@@ -20,7 +20,7 @@ const Services = () => {
        animate = {controls}>
         <article className="service">
        <div className="service__head">
-         <h3>Web Development</h3>
+         <h3>Frontend Development</h3>
          </div>
          <ul className='service__list'>
 
