@@ -22,6 +22,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Apk from "../../assets/application-fe0dec7c-59df-49d6-a3c1-a90af742034e.apk"
+import stableflow from "../../assets/stableflow.png"
 const data = [
 
   {
@@ -30,6 +31,14 @@ const data = [
     title: 'The downloadable APK file for a Fullstack Android Mobile application that lets you upload and watch Videos',
     github: 'https://github.com/Captain-awesome619/awesometube-mobile-App',
     demo: Apk
+
+  },
+  {
+    id: 9,
+    image: stableflow,
+    title: 'A full stack web 3 application that lets users login with their mail and make live transactions',
+    github: 'https://github.com/Captain-awesome619/stableflow2',
+    demo: 'https://www.stableflow.online/'
 
   },
   {
