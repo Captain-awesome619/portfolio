@@ -24,7 +24,6 @@ import Slider from "react-slick";
 import Apk from "../../assets/application-fe0dec7c-59df-49d6-a3c1-a90af742034e.apk"
 import stableflow from "../../assets/stableflow.png"
 const data = [
-
   {
     id: 8,
     image: IMG8,
@@ -36,7 +35,7 @@ const data = [
   {
     id: 9,
     image: stableflow,
-    title: 'A full stack web 3 application that lets users login with their mail and make live transactions',
+    title: ' Wprked on A full stack web 3 application that lets users login with their mail and make live transactions',
     github: 'https://github.com/Captain-awesome619/stableflow2',
     demo: 'https://www.stableflow.online/'
 
