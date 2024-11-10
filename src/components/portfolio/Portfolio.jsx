@@ -35,7 +35,7 @@ const data = [
   {
     id: 9,
     image: stableflow,
-    title: ' Wprked on A full stack web 3 application that lets users login with their mail and make live transactions',
+    title: ' Worked on A full stack web 3 application that lets users login with their mail and make live transactions',
     github: 'https://github.com/Captain-awesome619/stableflow2',
     demo: 'https://www.stableflow.online/'
 
