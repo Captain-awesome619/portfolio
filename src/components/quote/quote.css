@@ -47,7 +47,7 @@ justify-content: center;
     font-size: 25px;
     color: white;
     text-align: center;
-    background: linear-gradient(90deg, red, orange, yellow, green, orange, indigo, violet);
+    background: linear-gradient(90deg, red, orange, yellow, green, orange, yellow, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent; /* Fallback for other browsers */
