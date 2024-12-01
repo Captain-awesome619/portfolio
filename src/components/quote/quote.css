@@ -40,7 +40,18 @@ justify-content: center;
     text-align: center;
 
 }
-
+.saying1{
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(90deg, red, orange, yellow, green, orange, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; /* Fallback for other browsers */
+}
 @media screen and (max-width: 600px) {
     .saying{
         font-size: 14px;

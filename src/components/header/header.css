@@ -18,6 +18,16 @@ header {
 
   }
 
+  .multi {
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold; /* Make the text bold */
+    background: linear-gradient(90deg, red, orange, yellow, green, orange, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; /* Fallback for other browsers */
+  }
+  
+
   /* =============== CTA ============== */
   .cta {
     margin-top: 1.5rem;
@@ -121,6 +131,10 @@ padding-bottom: 1rem;
   }
   .text-light{
     animation: slide_up 3.1s ease;
+   
+  }
+  .text-l2{
+   font-weight: bolder;
   }
   #btn-light{
     animation: slide_up 4.1s ease;

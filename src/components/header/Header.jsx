@@ -21,8 +21,8 @@ const Header = () => {
 
      <h5>Hello I'm</h5>
 
-     <h1>Ogunsola Toluwalase</h1>
-     <h6 className="text-light">A FrontEnd Developer</h6>
+     <h1 className='multi'>Ogunsola Toluwalase</h1>
+     <h6 className="text-light">A  <span className='text-l2'>FrontEnd</span> Engineer</h6>
 
      </div>
 

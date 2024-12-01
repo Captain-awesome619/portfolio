@@ -30,7 +30,7 @@ const Quote = () => {
     <div className='quotebox33'>
 
     <div className='quote'>
-    <div ><p className='saying'>"{quote}"</p></div>
+    <div ><p className='saying1'>"{quote}"</p></div>
     <div className='qotaut'><p className='saying'>{author}</p></div>
 </div>
 <div className='qot2'>
