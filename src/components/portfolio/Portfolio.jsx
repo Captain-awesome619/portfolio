@@ -109,7 +109,7 @@ const settings = {
   slidesToScroll: 1,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 9000,
+  autoplaySpeed: 10000,
 };
     return (
       <motion.section id='portfolio'
