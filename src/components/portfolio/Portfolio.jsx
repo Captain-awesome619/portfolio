@@ -3,6 +3,7 @@ import './portfolio.css'
 import IMG1 from "../../assets/port-image3.png"
 import IMG2 from "../../assets/cafena-image2.png"
 import IMG3 from "../../assets/crypt3.png"
+
 import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
 import IMG4 from "../../assets/Realator1.png"
@@ -17,7 +18,7 @@ import cert4 from "../../assets/badge4.png"
 import cert5 from "../../assets/badge6.png"
 import cert6 from "../../assets/testdome.png"
 import IMG7 from "../../assets/slide7.png"
-import IMG8 from "../../assets/aora2.jpg"
+import IMG8 from "../../assets/cards.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -27,7 +28,7 @@ const data = [
   {
     id: 8,
     image: IMG8,
-    title: 'The downloadable APK file for a Fullstack Android Mobile application that lets you upload and watch Videos',
+    title: 'A downloadable APK for a full-stack Android mobile application that allows users to upload and watch videos. Built using React Native for a smooth and responsive user interface, Appwrite as the backend-as-a-service for seamless data management, and styled with NativeWind for Tailwind-like utility-based styling in React Native.',
     github: 'https://github.com/Captain-awesome619/awesometube-mobile-App',
     demo: Apk
 
@@ -35,7 +36,7 @@ const data = [
   {
     id: 9,
     image: stableflow,
-    title: ' Worked on A full stack web 3 application that lets users login with their mail and make live transactions',
+    title: 'Developed a full-stack Web3 application enabling users to log in using their email and perform live transactions. Built with Next.js for the frontend, styled using Tailwind CSS, and integrated with the Privy React Auth SDK for seamless wallet authentication. Leveraged ethers.js and Moralis among others for Web3 functionalities, ensuring secure and efficient blockchain interactions',
     github: 'https://github.com/Captain-awesome619/stableflow2',
     demo: 'https://www.stableflow.online/'
 
@@ -43,7 +44,7 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: 'Check out my blog on packages and technologies I use!',
+    title: 'Explore my blog where I share insights on the packages and technologies I use, created with Hygraph (a powerful headless CMS), Next.js, and styled using Tailwind CSS. The platform offers a clean, responsive layout for easy reading, providing valuable details about tools that streamline development.',
     github: 'https://github.com/Captain-awesome619/blog',
     demo: 'https://dark-vale-b357a0.netlify.app/'
 
@@ -51,7 +52,7 @@ const data = [
   {
     id: 7,
     image: IMG7,
-    title: 'A simple product landing page,created using Tailwindcss',
+    title: 'A clean and simple responsive product landing page built using React and styled with Tailwind CSS. The design focuses on modern aesthetics, fast performance, and mobile-first responsiveness.it effectively highlights product features and drives user engagement.',
     github: 'https://github.com/Captain-awesome619/landing_page',
     demo: 'https://store-landing-page.netlify.app/'
 
@@ -59,7 +60,7 @@ const data = [
   {
     id: 6,
     image: IMG6,
-    title: 'A Full-Stack e-commerce application created using Nextjs and Sanity.io',
+    title: 'A dynamic Full-Stack e-commerce application built with Next.js for a fast and responsive frontend,and Sanity.io as the headless CMS for scalable, efficient content management. It features an intuitive UI, and powerful backend capabilities, ensuring a smooth user experience for both shoppers and admins.',
     github: 'https://github.com/Captain-awesome619/Aesomeinc',
     demo: 'https://awesome-inc-d54ba6.netlify.app/'
 
@@ -67,7 +68,7 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'A multipurpose-app for a Web-development agency',
+    title: 'A responsive, multipurpose landing page designed for a Web Development Agency, featuring smooth animations and a visually appealing layout. It offers an engaging user experience with intuitive navigation, modern design aesthetics, and seamless responsiveness across various devices. ',
     github: 'https://github.com/Captain-awesome619/cuddly-couscous',
     demo: 'https://glowing-jelly-c2c776.netlify.app/'
 
@@ -75,7 +76,7 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: 'The Cafena coffee buisness Web-Application',
+    title: 'The Cafena Coffee Business Web Application is built using Vanilla JavaScript, HTML, and native CSS, delivering a smooth and responsive user interface. It features clean, modern design aesthetics tailored for showcasing coffee products or services, ensuring an engaging experience for customers.',
     github: 'https://github.com/Captain-awesome619/coffee-app',
     demo: 'https://fanciful-starship-a24bfb.netlify.app/'
   },
@@ -83,14 +84,14 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: 'An up to date crypto-currency Web-Applicationl',
+    title: 'A cryptocurrency tracker app built with React.js and Native CSS. It fetches real-time crypto data using a REST API, providing users with prices, market trends, and search functionality.',
     github: 'https://github.com/Captain-awesome619/cryptoverse',
     demo: 'https://crypto-verse-ac724d.netlify.app/'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'A Real-Estate Web-App with various options',
+    title: 'A full-stack Real Estate web application built with Next.js and native CSS, offering advanced search and filter functionality for seamless property browsing. Users can explore various real estate options with a clean, responsive design, ensuring a smooth experience across all devices.',
     github: 'https://github.com/Captain-awesome619/Realator',
     demo: 'https://realator-85d0e6.netlify.app/'
   }
@@ -108,7 +109,7 @@ const settings = {
   slidesToScroll: 1,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 6000,
+  autoplaySpeed: 9000,
 };
     return (
       <motion.section id='portfolio'
@@ -135,7 +136,7 @@ className={state === "projects" ? "conn" : "hid"}
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} className="portimage" />
                 </div>
-                <h3>{title}</h3>
+                <h3 className='destitle'>{title}</h3>
 </div>
                 <div className="portfolio__item-cta">
                 <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>

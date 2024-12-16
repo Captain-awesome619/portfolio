@@ -12,7 +12,9 @@
       height: fit-content;
       transition: var(--transition);
     }
-
+.alt{
+  color: var(--color-primary);
+}
     .service:hover {
       background: transparent;
       border-color: var(--color-primary-variant);
@@ -37,7 +39,6 @@ padding: 3rem;
       }
       .service__list li {
         display: flex;
-
         margin-bottom: 1rem;
         align-items: center;
         gap: 1rem;
@@ -78,5 +79,8 @@ padding: 3rem;
   .services__container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .service__list{
+    padding: 1rem;
   }
 }

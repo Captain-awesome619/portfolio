@@ -129,4 +129,7 @@ transform: scale(1.1);
     .conn{
       max-width: 350px;
     }
+    .destitle{
+      font-size: 17px;
+    }
   }

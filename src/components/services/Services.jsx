@@ -27,45 +27,45 @@ const Services = () => {
 
          <li className='serlist'>
 
-<p>
-  Creation of custom Web-Applications and Landing-Pages.
+<p >
+Custom Web and Mobile Applications Development: <span className='alt'>Tailored solutions for web and mobile applications, ensuring smooth performance and user satisfaction.</span> 
 </p>
 </li>
 
 <li className='serlist'>
 
 <p>
-Creation of smooth and responsive mobile-Applications .
+Responsive Mobile Applications: <span className='alt'> Seamlessly optimized mobile apps with responsive designs for all devices.</span>
 </p>
 </li>
          <li className='serlist'>
 
            <p>
-             Top knotch user-interface design implementation.
+           Top-Notch User Interface Design: <span className='alt'>Clean, modern, and user-friendly UI implementation for an exceptional experience.</span> 
            </p>
          </li>
          <li className='serlist'>
 
            <p>
-             High quality optimization strategy and testing.
+           High-Quality Optimization & Testing:<span className='alt'> Robust performance optimization with thorough testing for reliability.</span>
            </p>
          </li>
          <li className='serlist'>
 
            <p>
-             Utilization of API's
+           API Integration:<span className='alt'>  Efficient utilization and integration of APIs for extended functionality.</span>
            </p>
          </li>
          <li className='serlist'>
 
            <p>
-             Hosting and on-going website maintenance.
+           Hosting & Ongoing Maintenance: <span className='alt'>  Reliable hosting services with continuous updates and support.</span>
            </p>
          </li>
          <li className='serlist'>
 
            <p>
-             Creation of  responsive and smooth E-commerce Web-Apps.
+           Smooth & Responsive E-commerce Applications: <span className='alt'>Modern, scalable e-commerce solutions with responsive designs for a seamless shopping experience.</span>
            </p>
          </li>
          
@@ -82,25 +82,25 @@ Creation of smooth and responsive mobile-Applications .
          <li>
 
            <p>
-             Creation of content for Marketing and Promotional-Materials.
+           Creating Content for Marketing & Promotional Materials: <span className='alt'>Develop engaging, high-quality content tailored to marketing campaigns and promotional needs.</span>
            </p>
          </li>
          <li>
 
            <p>
-             Monitoring websites and social media metrics.
+           Monitoring Websites & Social Media Metrics: <span className='alt'>Track performance analytics to evaluate engagement, traffic, and effectiveness of strategies.</span>
            </p>
          </li>
          <li>
 
            <p>
-             Ensuring adherence to best SEO practices.
+           Ensuring Adherence to SEO Best Practices:  <span className='alt'>Implement up-to-date SEO strategies to improve visibility and search engine rankings.</span>
            </p>
          </li>
          <li>
 
            <p>
-             Using tools and frameworks to optimize user experience and interraction.
+           Optimizing User Experience & Interaction:  <span className='alt'>Leverage tools and frameworks to enhance usability, interactivity, and overall user satisfaction.</span>
            </p>
          </li>
          </ul>

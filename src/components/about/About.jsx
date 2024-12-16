@@ -42,12 +42,15 @@ const About = () => {
             <article className="about__card">
               < SiBookstack className="about__icon"/>
               <h5>Expertise</h5>
-              <small>HTML CSS Javascript(React,NextJS),<br></br>TailwindCSS,ChakraUI</small>
+              <small>HTML CSS Javascript(React,React-Native , NextJS),<br></br>TailwindCSS,ChakraUI</small>
               </article>
             </div>
-            <p >Hello there,my name is Ogunsola Toluwalase.I'm a Front-end developer who specializes in the creation of responsive web and mobile applications and landing pages.
-              I posses very comprehensive knowledge of the Front-end development field,the utilization of frame works,API's and content creation platforms such as GraphCMS and Sanity.io.
-              I would very much LOVE to work with you.</p>
+            <p >Hello! My name is Ogunsola Toluwalase, and I'm a passionate Front-End Developer specializing in 
+              crafting responsive web and mobile applications as well as modern landing pages. I have a strong understanding 
+              of front-end frameworks, API integration, and content management platforms like GraphCMS and Sanity.io. 
+              My expertise lies in building intuitive, user-friendly interfaces that deliver exceptional user experiences.
+I would be thrilled to bring my skills and creativity to your team and collaborate on impactful projects. I look forward to 
+the opportunity to work with you!</p>
               <a href='https://dark-vale-b357a0.netlify.app/' className='btn btn-primary'>Check out my Blog!</a>
           </motion.div>
         </motion.div>

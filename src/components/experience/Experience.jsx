@@ -4,9 +4,20 @@ import {BsBookmarkCheckFill} from "react-icons/bs"
 import { motion } from 'framer-motion'
 import {  reveal2 } from '../animation'
 import { UseScroll } from '../UseScroll'
-
-
-
+import { SiRedux } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { SiCss3 } from "react-icons/si";
+import { SiJavascript } from "react-icons/si"
+import { SiTypescript } from "react-icons/si"
+import { SiNextdotjs } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { MdOutlineMobiledataOff } from "react-icons/md";
+import { SiTailwindcss } from "react-icons/si";
+import { SiChakraui } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { SiSupabase } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 const Experience = () => {
   const [element,controls] = UseScroll();
  return (
@@ -27,28 +38,28 @@ const Experience = () => {
           <h3>Frontend Development</h3>
           <div className="experience__content">
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <FaHtml5 className='experience__details-icon'/>
             <div>
             <h4>HTML</h4>
 
             </div>
             </article>
           <article className="experience__details">
-            <BsBookmarkCheckFill  className='experience__details-icon'/>
+            <SiCss3   className='experience__details-icon'/>
         <div>
             <h4>CSS</h4>
 
             </div>
             </article>
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <SiJavascript  className='experience__details-icon'/>
             <div>
             <h4>Javascript</h4>
 
             </div>
             </article>
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
+            < SiTypescript className='experience__details-icon'/>
             <div>
             <h4>Typescript</h4>
 
@@ -62,7 +73,7 @@ const Experience = () => {
             <h3>Frontend Development</h3>
             <div className='experience__content'>
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon' />
+            <SiNextdotjs className='experience__details-icon' />
 <div>
             <h4>NextJS</h4>
 
@@ -70,7 +81,7 @@ const Experience = () => {
             </article>
          
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <FaReact className='experience__details-icon'/>
             <div>
             <h4>React</h4>
 
@@ -80,7 +91,7 @@ const Experience = () => {
             
 
             <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <FaReact className='experience__details-icon'/>
             <div>
             <h4>React Native</h4>
             </div>
@@ -97,16 +108,16 @@ const Experience = () => {
             <h3>Frontend Development</h3>
             <div className='experience__content'>
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon' />
+            <SiRedux className='experience__details-icon' />
 <div>
             <h4>Redux</h4>
 
             </div>
             </article>
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon' />
+            <MdOutlineMobiledataOff  className='experience__details-icon' />
             <div>
-            <h4>API's</h4>
+            <h4>API</h4>
 
         </div>
             </article>
@@ -130,7 +141,7 @@ const Experience = () => {
             </article>
 
             <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <SiTailwindcss  className='experience__details-icon'/>
             <div>
             <h4>Tailwindcss</h4>
 
@@ -138,7 +149,7 @@ const Experience = () => {
             </article>
 
             <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <SiChakraui className='experience__details-icon'/>
             <div>
             <h4>ChakraUI</h4>
 
@@ -153,36 +164,30 @@ const Experience = () => {
             <h3>Tracking and Backend Tools</h3>
             <div className='experience__content'>
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon' />
+            <SiMongodb className='experience__details-icon' />
 <div>
             <h4>MongoDB</h4>
 
             </div>
             </article>
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon' />
+            <SiExpress  className='experience__details-icon' />
             <div>
             <h4>Express</h4>
 
         </div>
             </article>
           <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
+            <SiSupabase className='experience__details-icon'/>
             <div>
             <h4>SupaBase</h4>
 
             </div>
             </article>
-          <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon'/>
-            <div>
-            <h4>AppWrite</h4>
-
-            </div>
-            </article>
+         
 
             <article className="experience__details">
-            <BsBookmarkCheckFill className='experience__details-icon' />
+            <FaGithub className='experience__details-icon' />
             <div>
             <h4>GIT</h4>
 

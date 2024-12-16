@@ -39,8 +39,6 @@ alert("sent successfully!");
 
 return(
     <motion.section id='contact'
-
-
     >
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
