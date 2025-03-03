@@ -19,6 +19,7 @@ import cert5 from "../../assets/badge6.png"
 import cert6 from "../../assets/testdome.png"
 import IMG7 from "../../assets/slide7.png"
 import IMG8 from "../../assets/cards.png"
+import IMG9 from "../../assets/flance.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -31,6 +32,14 @@ const data = [
     title: 'A downloadable APK for a full-stack Android mobile application that allows users to upload and watch videos. Built using React Native for a smooth and responsive user interface, Appwrite as the backend-as-a-service for seamless data management, and styled with NativeWind for Tailwind-like utility-based styling in React Native.',
     github: 'https://github.com/Captain-awesome619/awesometube-mobile-App',
     demo: Apk
+
+  },
+  {
+    id: 9,
+    image: IMG9,
+    title: ' a web application that provides in-depth weather information and accurate future forecasts based on the user location. Users can access real-time weather data, including temperature, humidity, wind speed, and atmospheric conditions. The app also allows users to search for and explore weather details for other locations worldwide, ensuring reliable and comprehensive weather insights.',
+    github: 'https://github.com/Captain-awesome619/flance_assesment',
+    demo: 'https://flanceweatherapp.netlify.app/'
 
   },
   {

@@ -45,7 +45,7 @@ const About = () => {
               <small>HTML CSS Javascript(React,React-Native , NextJS),<br></br>TailwindCSS,ChakraUI</small>
               </article>
             </div>
-            <p >Hello! My name is Ogunsola Toluwalase, and I'm a passionate Front-End Developer specializing in 
+            <p >Hello! My name is Ogunsola Toluwalase, and I'm a passionate Front-End Engineer specializing in 
               crafting responsive web and mobile applications as well as modern landing pages. I have a strong understanding 
               of front-end frameworks, API integration, and content management platforms like GraphCMS and Sanity.io. 
               My expertise lies in building intuitive, user-friendly interfaces that deliver exceptional user experiences.
