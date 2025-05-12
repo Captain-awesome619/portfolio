@@ -68,9 +68,12 @@ margin-left: 10px;
 
   .portfolio__item-image {
     display: grid;
-    border-radius: 2.0rem;
+    border-top-left-radius: 3.0rem;
+    border-bottom-left-radius: 3.0rem;
     overflow: hidden;
 transform: scale(1.1);
+align-items: center;
+justify-items: center;
   }
 .portimage{
   max-height: 300px;

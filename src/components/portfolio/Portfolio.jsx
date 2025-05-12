@@ -25,17 +25,25 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Apk from "../../assets/application-fe0dec7c-59df-49d6-a3c1-a90af742034e.apk"
 import stableflow from "../../assets/stableflow.png"
+import IMG11 from '../../assets/safehood.png'
 const data = [
+  {
+    id: 11,
+    image: IMG11,
+    title: 'A geo-social web app where users can post content with media to a live map, manage profiles, and explore the posts of other users. Built with Next.js, TypeScript, Tailwind CSS, and Appwrite.    — Designed by AnjolaDave',
+    github: 'https://github.com/Captain-awesome619/safehood',
+    demo: 'https://safe-hood.netlify.app/'
+
+  },
   {
     id: 8,
     image: IMG8,
     title: 'A downloadable APK for a full-stack Android mobile application that allows users to upload and watch videos. Built using React Native for a smooth and responsive user interface, Appwrite as the backend-as-a-service for seamless data management, and styled with NativeWind for Tailwind-like utility-based styling in React Native.',
     github: 'https://github.com/Captain-awesome619/awesometube-mobile-App',
     demo: Apk
-
   },
   {
-    id: 9,
+    id: 10,
     image: IMG9,
     title: ' a web application that provides in-depth weather information and accurate future forecasts based on the user location. Users can access real-time weather data, including temperature, humidity, wind speed, and atmospheric conditions. The app also allows users to search for and explore weather details for other locations worldwide, ensuring reliable and comprehensive weather insights.',
     github: 'https://github.com/Captain-awesome619/flance_assesment',
@@ -134,8 +142,7 @@ const settings = {
 
 className='overrr'>
         <div 
-className={state === "projects" ? "conn" : "hid"}
->
+className={state === "projects" ? "conn" : "hid"}>
 <Slider {...settings}>
           { state === "projects" ?
             data.map(({id, image, title, github, demo}) => {
