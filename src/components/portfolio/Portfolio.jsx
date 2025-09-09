@@ -38,7 +38,7 @@ const data = [
   {
     id: 12,
     image: IMG12,
-    title: 'Xtrempay’s landing page combines a clean, modular UI with bold typography and app mockups, enhanced by GSAP-driven animations that fade, slide, and stagger content into view—creating a dynamic, engaging, and locally tailored digital experience.(Desktop Version)',
+    title: 'Xtrempay’s desktop-only landing page showcases a clean, modular UI with bold hero text and app mockups, enhanced by GSAP-powered fade, slide, and stagger animations that bring each section to life with a smooth, engaging flow.',
     github: 'https://github.com/xtrempaynigeria/xtremepay_website',
     demo: 'https://www.xtrempay.com/'
 
