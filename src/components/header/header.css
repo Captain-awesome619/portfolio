@@ -123,30 +123,7 @@ padding-bottom: 1rem;
   h6{
     font-size: 15px;
   }
-  .inner > h5{
-    animation: slide_up 1.4s ease;
-  }
-  .inner > h1{
-    animation: slide_up 2.6s ease;
-  }
-  .text-light{
-    animation: slide_up 3.1s ease;
-   
-  }
-  .text-l2{
-   font-weight: bolder;
-  }
-  #btn-light{
-    animation: slide_up 4.1s ease;
-  }
-@keyframes slide_up{
-  0%{
-    transform: translateY(250px);
-}
-100%{
-  transform: translateY(0);
-}
-}
+  
 
 
 
@@ -157,9 +134,7 @@ padding-bottom: 1rem;
     header {
       height: fit-content;
     }
-    .qot{
-
-    }
+   
     .cta {
       margin-top: 1.5rem;
       display: grid;
@@ -182,9 +157,7 @@ padding-bottom: 1rem;
     
       padding-top: 4rem;
     }
-    .qottt{
-
-    }
+    
     .header__socials,
     .scroll__down {
       display: none;

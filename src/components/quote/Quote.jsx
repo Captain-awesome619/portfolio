@@ -25,7 +25,6 @@ const Quote = () => {
     lastIndexRef.current = idx;
     return list[idx];
   };
-
   useEffect(() => {
     (async () => {
       const q = await fetchRandomQuote();
@@ -33,8 +32,6 @@ const Quote = () => {
       setAuthor(q.author);
     })();
   }, []);
-
-  // Build a ghost clone made of spans (one per character) in the overlay
   const spawnGhost = (text) => {
     const ghost = document.createElement("div");
     ghost.className = "snap-ghost";
@@ -54,19 +51,12 @@ const Quote = () => {
     overlayRef.current.appendChild(ghost);
     return ghost;
   };
-
   const handleClick = async () => {
     if (isAnimating || !textRef.current || !overlayRef.current) return;
     setIsAnimating(true);
-
-    // 1) Create the ghost from the CURRENT on-screen text
     const currentText = textRef.current.textContent || "";
     const ghost = spawnGhost(currentText);
-
-    // 2) Preload next quote
     const next = await fetchRandomQuote();
-
-    // 3) Animate: slide upward and disintegrate simultaneously
     const letters = ghost.querySelectorAll(".snap-char");
     gsap.to(letters, {
       opacity: 0,
@@ -78,8 +68,6 @@ const Quote = () => {
       stagger: 0.015,
       onComplete: () => ghost.remove(),
     });
-
-    // 4) Animate out current author, swap, fade in new
     if (authorRef.current) {
       gsap.to(authorRef.current, {
         opacity: 0,

@@ -1,47 +1,69 @@
-import React from 'react'
-import './header.css'
-import CTA from './CTA'
-import ME from '../../assets/picture5.jpg'
-import HeaderSocials from './HeaderSocials'
-import {Link} from "react-scroll"
-import Quote from '../quote/Quote'
-
-
+import React, { useRef } from "react";
+import "./header.css";
+import CTA from "./CTA";
+import ME from "../../assets/picture5.jpg";
+import HeaderSocials from "./HeaderSocials";
+import { Link } from "react-scroll";
+import Quote from "../quote/Quote";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Header = () => {
+  const h5Ref = useRef(null);
+  const h1Ref = useRef(null);
+  const h6Ref = useRef(null);
+  const ctaRef = useRef(null);
 
+  useGSAP(() => {
+    const tl = gsap.timeline({ defaults: { opacity: 0, duration: 1.5, ease: "power3.out" } });
 
+    tl.from(h5Ref.current, { y: -50 }) // from top
+      .from(h1Ref.current, { x: -100 }, "-=0.5") // from left
+      .from(h6Ref.current, { x: 100 }, "-=0.5") // from right
+      .from(ctaRef.current, { y: 50 }, "-=0.3"); // from below
+  }, []);
 
   return (
-<div id='head'>
-    <header>
-   <div className="container header__container">
+    <div id="head">
+      <header>
+        <div className="container header__container">
+          <div className="inner">
+            {/* h5 slides in from top */}
+            <h5 ref={h5Ref}>Hello I'm</h5>
 
-     <div className='inner'>
+            {/* h1 slides in from left */}
+            <h1 ref={h1Ref} className="multi">
+              Ogunsola Toluwalase
+            </h1>
 
-     <h5>Hello I'm</h5>
+            {/* h6 slides in from right */}
+            <h6 ref={h6Ref} className="text-light">
+              A <span className="text-l2">FrontEnd</span> Engineer
+            </h6>
+          </div>
 
-     <h1 className='multi'>Ogunsola Toluwalase</h1>
-     <h6 className="text-light">A  <span className='text-l2'>FrontEnd</span> Engineer</h6>
+          {/* CTA slides in from below */}
+          <div ref={ctaRef}>
+            <CTA />
+          </div>
 
-     </div>
+          <HeaderSocials />
 
-     <CTA />
-     <HeaderSocials />
-<div className='over'>
-     <div className='me'>
+          <div className="over">
+            <div className="me">
+              <img src={ME} alt="ME" className="meimg" />
+            </div>
+          </div>
 
-       <img src={ME}alt='ME' className='meimg' />
-     </div>
+          <Link to="contact" smooth={500} spy={true} className="scroll__down">
+            Scroll Down
+          </Link>
+        </div>
+      </header>
 
-</div>
-     <Link to="contact" smooth={500} spy={true}  className='scroll__down'>Scroll Down</Link>
-   </div>
-    </header>
+      <Quote />
+    </div>
+  );
+};
 
-  <Quote/>
-</div>
-  )
-}
-
-export default Header
+export default Header;

@@ -3,7 +3,6 @@ import './portfolio.css'
 import IMG1 from "../../assets/port-image3.png"
 import IMG2 from "../../assets/cafena-image2.png"
 import IMG3 from "../../assets/crypt3.png"
-
 import { motion } from 'framer-motion'
 import { UseScroll } from '../UseScroll'
 import IMG4 from "../../assets/Realator1.png"
@@ -26,6 +25,7 @@ import Slider from "react-slick";
 import Apk from "../../assets/application-fe0dec7c-59df-49d6-a3c1-a90af742034e.apk"
 import stableflow from "../../assets/stableflow.png"
 import IMG11 from '../../assets/safehood.png'
+import IMG12 from '../../assets/xtreme.png'
 const data = [
   {
     id: 11,
@@ -33,6 +33,14 @@ const data = [
     title: 'A geo-social web app where users can post content with media to a live map, manage profiles, and explore the posts of other users. Built with Next.js, TypeScript, Tailwind CSS, and Appwrite.    — Designed by AnjolaDave',
     github: 'https://github.com/Captain-awesome619/safehood',
     demo: 'https://safe-hood.netlify.app/'
+
+  },
+  {
+    id: 12,
+    image: IMG12,
+    title: 'Xtrempay’s landing page combines a clean, modular UI with bold typography and app mockups, enhanced by GSAP-driven animations that fade, slide, and stagger content into view—creating a dynamic, engaging, and locally tailored digital experience.(Desktop Version)',
+    github: 'https://github.com/xtrempaynigeria/xtremepay_website',
+    demo: 'https://www.xtrempay.com/'
 
   },
   {
