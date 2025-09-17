@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "../quote/quote.css";
-
+import snap from '../../assets/snapping.gif'
 const Quote = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
@@ -130,7 +130,7 @@ const Quote = () => {
 
       <div className="qot2">
         <button className="btnqot" onClick={handleClick} disabled={isAnimating}>
-          <p>{isAnimating ? "Snapping…" : "New Quote"}</p>
+          <p>{isAnimating ?   <img src={snap} alt="snapping" className="snap" /> : "New Quote"}</p>
         </button>
       </div>
     </div>

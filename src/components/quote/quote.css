@@ -66,6 +66,10 @@ gap: 0.5rem;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent; /* Fallback for other browsers */
 }
+.snap{
+    width: 30px;
+    height: 20px;
+}
 @media screen and (max-width: 600px) {
     .saying{
         font-size: 14px;
