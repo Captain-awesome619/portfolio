@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "../quote/quote.css";
-import snap from '../../assets/snapping.gif'
+import snap from '../../assets/giphy.gif'
 const Quote = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");

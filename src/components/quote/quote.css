@@ -67,8 +67,8 @@ gap: 0.5rem;
     text-fill-color: transparent; /* Fallback for other browsers */
 }
 .snap{
-    width: 30px;
-    height: 20px;
+    width: 40px;
+    height: 25px;
 }
 @media screen and (max-width: 600px) {
     .saying{
