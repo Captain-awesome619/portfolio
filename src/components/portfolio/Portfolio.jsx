@@ -69,7 +69,7 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: 'Explore my blog where I share insights on the packages and technologies I use, created with Hygraph (a powerful headless CMS), Next.js, and styled using Tailwind CSS. The platform offers a clean, responsive layout for easy reading, providing valuable details about tools that streamline development.',
+    title: 'Explore my blog where I share insights on the tools and technologies I use — built with Hygraph (a powerful headless CMS), Next.js, and Tailwind CSS for a clean, responsive reading experience. Plus, try out the new AI chatbot feature that lets you ask questions and dive deeper into each topic!',
     github: 'https://github.com/Captain-awesome619/blog',
     demo: 'https://dark-vale-b357a0.netlify.app/'
 
