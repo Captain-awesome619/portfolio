@@ -1,85 +1,155 @@
-import React from 'react'
-import './contact.css'
-import {MdOutlineEmail} from 'react-icons/md'
-
-import {BsWhatsapp} from 'react-icons/bs'
-import { useRef } from 'react';
-import emailjs from 'emailjs-com'
-import {AiOutlineTwitter} from'react-icons/ai'
-import { motion } from 'framer-motion';
-import { UseScroll } from '../UseScroll'
-import { experienceanimations } from '../animation';
-
+"use client";
+import React, { useRef, useEffect } from "react";
+import "./contact.css";
+import { MdOutlineEmail } from "react-icons/md";
+import { BsWhatsapp } from "react-icons/bs";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { UseScroll } from "../UseScroll";
+import { experienceanimations } from "../animation";
+import emailjs from "emailjs-com";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Contact = () => {
-  const [element  ,controls] = UseScroll();
+  const [element, controls] = UseScroll();
+  const form = useRef(null); // used for both emailjs + animation
+  const contactOptionsRef = useRef(null);
 
-  const form = useRef();
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (!contactOptionsRef.current || !form.current) return;
+
+    // Left section animation
+    gsap.fromTo(
+      contactOptionsRef.current,
+      { x: -250, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: contactOptionsRef.current,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    // Right section animation
+    gsap.fromTo(
+      form.current,
+      { x: 200, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: form.current,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      }
+    );
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_jlhorip', 'template_itj1w5l', form.current, 'FG1X1e9_G74xzY2qq')
+    emailjs
+      .sendForm(
+        "service_jlhorip",
+        "template_itj1w5l",
+        form.current,
+        "FG1X1e9_G74xzY2qq"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Something went wrong...", error);
+        }
+      );
 
-
-
-    .then(
-(result) =>{
-console.log(result.text);
-alert("sent successfully!");
-},
-(error) => {
-  console.log(error.text);
-  alert("something went wrong....", error);
-}
-    );
-    e.target.reset()
+    e.target.reset();
   };
 
-
-return(
-    <motion.section id='contact'
-    >
+  return (
+    <section id="contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <motion.div className="container contact__container"
-      ref={element}
-      variants={experienceanimations}
-        transition={{type: "tween" ,duration: 1}}
-        animate = {controls}
-
+      <motion.div
+        className="container contact__container"
+        ref={element}
+        variants={experienceanimations}
+        transition={{ type: "tween", duration: 1 }}
+        animate={controls}
       >
-        <div className="contact__options"
-        >
+        {/* ✅ Slides in from the LEFT */}
+        <div className="contact__options" ref={contactOptionsRef}>
           <article className="contact__option">
-            <MdOutlineEmail className='contact__option-icon'/>
+            <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>Ogunsolatoluwalase@gmail.com</h5>
-            <a href="mailto:Ogunsolatoluwalase@gmail.com" target="_blank" rel='noreferrer'>Send me a mail</a>
+            <a
+              href="mailto:Ogunsolatoluwalase@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send me a mail
+            </a>
           </article>
+
           <article className="contact__option">
-            <AiOutlineTwitter className='contact__option-icon'/>
+            <AiOutlineTwitter className="contact__option-icon" />
             <h4>Twitter</h4>
             <h5>lord_awesomee</h5>
-            <a href="https://twitter.com/lord_awesomee" target="_blank" rel='noreferrer'>Buzz me on Twitter</a>
+            <a
+              href="https://twitter.com/lord_awesomee"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Buzz me on Twitter
+            </a>
           </article>
+
           <article className="contact__option">
-            <BsWhatsapp className='contact__option-icon'/>
+            <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
-            <a href="https://Wa.me/+2348167160663" target="_blank" rel='noreferrer'>Send a message</a>
+            <a
+              href="https://Wa.me/+2348167160663"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
           </article>
         </div>
-        {/* END OF CONTACT OPTIONS */}
+
+        {/* ✅ Slides in from the RIGHT */}
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message' required ></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <input type="text" name="name" placeholder="Your Full Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
         </form>
       </motion.div>
-    </motion.section>
-  )
-}
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;

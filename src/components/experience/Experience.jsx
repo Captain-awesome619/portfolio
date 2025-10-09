@@ -18,11 +18,65 @@ import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiSupabase } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useEffect,useRef } from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const Experience = () => {
   const [element,controls] = UseScroll();
+
+
+
+ const sectionRefs = useRef([]);
+
+   useGSAP(() => {
+    sectionRefs.current.forEach((el, index) => {
+      const fromDirection = index % 2 === 0 ? -100 : 100;
+      gsap.fromTo(
+        el,
+        { x: fromDirection, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+
+ const items = el.querySelectorAll(".experience__details");
+      gsap.fromTo(
+        items,
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: "power2.out",
+          stagger: 0.15,
+          delay: 0.3,
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+          },
+        }
+      );
+
+    });
+  }, []);
+
+  
+
  return (
 
-    <motion.section
+    <section
     id='experience'
     ref={element}
     >
@@ -30,11 +84,9 @@ const Experience = () => {
       <h2> Stack and Technologies </h2>
       <motion.div className=" container experience__container"
 
-      variants={reveal2}
-        transition={{duration: 1, }}
-        animate = {controls}>
+      >
 
-        <div className="experience__frontend">
+        <div  ref={(el) => (sectionRefs.current[0] = el)} className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
           <article className="experience__details">
@@ -69,7 +121,7 @@ const Experience = () => {
 </div>
 
 
-          <div  className="experience__design">
+          <div ref={(el) => (sectionRefs.current[1] = el)}  className="experience__design">
             <h3>Frontend Development</h3>
             <div className='experience__content'>
           <article className="experience__details">
@@ -104,7 +156,9 @@ const Experience = () => {
             </article>
             </div>
             </div>
-          <div  className="experience__design">
+
+
+          <div   ref={(el) => (sectionRefs.current[2] = el)} className="experience__design">
             <h3>Frontend Development</h3>
             <div className='experience__content'>
           <article className="experience__details">
@@ -155,12 +209,13 @@ const Experience = () => {
 
             </div>
             </article>
-
-
             </div>
             </div>
 
-            <div  className="experience__design">
+
+
+
+            <div ref={(el) => (sectionRefs.current[3] = el)}  className="experience__design">
             <h3>Tracking and Backend Tools</h3>
             <div className='experience__content'>
           <article className="experience__details">
@@ -208,7 +263,7 @@ const Experience = () => {
         </motion.div>
 
 
-      </motion.section>
+      </section>
 
   )
   }

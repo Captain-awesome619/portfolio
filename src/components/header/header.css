@@ -84,17 +84,22 @@ justify-content: center;
 
   /* =============== ME ============== */
   .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: max-content;
-    height: fit-content;
-    position: relative;
-    margin-top: 3rem;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 12rem 12rem 0 0;
-    overflow-y: hidden;
-    padding: 6rem 0.5rem 1.5rem 1.5rem;
-  }
+  width: max-content;
+  height: fit-content;
+  position: relative;
+  margin-top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12rem 12rem 0 0;
+  overflow-y: hidden;
+  padding: 6rem 0.5rem 1.5rem 1.5rem;
+
+  /* Animated gradient background */
+  background: linear-gradient(270deg, #00c6ff, #0072ff, #ff6ec4, #7873f5, #00c9a7);
+  background-size: 1000% 1000%;
+  animation: gradientShift 15s ease infinite;
+}
+
 
   .meimg{
 
@@ -124,7 +129,23 @@ padding-bottom: 1rem;
     font-size: 15px;
   }
   
-
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 
 
