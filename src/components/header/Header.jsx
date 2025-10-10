@@ -51,7 +51,7 @@ const Header = () => {
 
           <div className="over">
             <div className="me">
-              <img src={ME} alt="ME" className="meimg" />
+              <img loading="lazy" src={ME} alt="ME" className="meimg" />
             </div>
           </div>
 

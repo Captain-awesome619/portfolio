@@ -158,7 +158,7 @@ className={state === "projects" ? "conn" : "hid"}>
                 <article key={id} className='portfolio__item'>
 <div>
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title} className="portimage" />
+                  <img loading='lazy' src={image} alt={title} className="portimage" />
                 </div>
                 <h3 className='destitle'>{title}</h3>
 </div>
@@ -177,12 +177,12 @@ className={state === "projects" ? "conn" : "hid"}>
             { state == "cert" ? 
               <div className={state === 'cert' ? "conn" : "hid"}>
               <Slider {...settings}>
-<img src={cert1} alt="badge" className='badge'/>
-<img src={cert2} alt="badge" className='badge'/>
-<img src={cert3} alt="badge" className='badge'/>
-<img src={cert4} alt="badge" className='badge'/>
-<img src={cert5} alt="badge" className='badge'/>
-<img src={cert6} alt="badge" className='badge'/>
+<img loading='lazy' src={cert1} alt="badge" className='badge'/>
+<img loading='lazy' src={cert2} alt="badge" className='badge'/>
+<img loading='lazy' src={cert3} alt="badge" className='badge'/>
+<img loading='lazy' src={cert4} alt="badge" className='badge'/>
+<img loading='lazy' src={cert5} alt="badge" className='badge'/>
+<img loading='lazy' src={cert6} alt="badge" className='badge'/>
 </Slider>
 </div>
  : ""}

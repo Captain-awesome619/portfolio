@@ -130,7 +130,7 @@ const Quote = () => {
 
       <div className="qot2">
         <button className="btnqot" onClick={handleClick} disabled={isAnimating}>
-          <p>{isAnimating ?   <img src={snap} alt="snapping" className="snap" /> : "New Quote"}</p>
+          <p>{isAnimating ?   <img src={snap} alt="snapping" className="snap" /> : "Get Quote"}</p>
         </button>
       </div>
     </div>

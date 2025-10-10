@@ -83,7 +83,7 @@ const About = () => {
         {/* 👇 Slides from left */}
         <div className="about__me" ref={imgRef}>
           <div className="about__me-image">
-            <img src={ME} alt="me" />
+            <img loading="lazy" src={ME} alt="me" />
           </div>
         </div>
 
