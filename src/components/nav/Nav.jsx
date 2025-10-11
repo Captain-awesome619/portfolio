@@ -19,7 +19,7 @@ const [ active , setactive] = useState("#")
     // Animation for nav container
     gsap.fromTo(
       navRef.current,
-      { y: 500, opacity: 0 }, // start below with no opacity
+      { y: 200, opacity: 0 }, // start below with no opacity
       {
         y: 0,
         opacity: 1,
@@ -31,7 +31,7 @@ const [ active , setactive] = useState("#")
 
 
   return (
-    <nav  >
+    <nav ref={navRef}  >
 <ScrollSpy>
 <a ref={createRef()} href="#head"  onClick={() => setactive('#')} className={active === '#' ? 'active' : ''}><BiHome/> </a>
     <a ref={createRef()} href="#about" onClick={() => setactive('#about')} className={active === '#about' ? 'active' : ''} > <BiUser/> </a>
