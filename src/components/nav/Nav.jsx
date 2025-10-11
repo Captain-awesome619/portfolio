@@ -6,15 +6,32 @@ import {GiBriefcase} from 'react-icons/gi'
 import ScrollSpy from "react-scrollspy-navigation"
 import { createRef } from "react";
 import {FaServicestack} from "react-icons/fa"
-import { useState } from "react";
-
+import { useState, useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
 
 
 const Nav = () => {
 const [ active , setactive] = useState("#")
+ const navRef = useRef(null);
+
+ useGSAP(() => {
+    // Animation for nav container
+    gsap.fromTo(
+      navRef.current,
+      { y: 500, opacity: 0 }, // start below with no opacity
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.5,
+        ease: "power3.out",
+      }
+    );
+  }, []);
+
 
   return (
-    <nav>
+    <nav ref={navRef} >
 <ScrollSpy>
 <a ref={createRef()} href="#head"  onClick={() => setactive('#')} className={active === '#' ? 'active' : ''}><BiHome/> </a>
     <a ref={createRef()} href="#about" onClick={() => setactive('#about')} className={active === '#about' ? 'active' : ''} > <BiUser/> </a>
