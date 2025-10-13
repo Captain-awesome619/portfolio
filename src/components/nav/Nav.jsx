@@ -33,7 +33,7 @@ const [ active , setactive] = useState("#")
   return (
 
     
-    <nav ref={navRef}  >
+    <nav   >
 <ScrollSpy>
 <a ref={createRef()} href="#head"  onClick={() => setactive('#')} className={active === '#' ? 'active' : ''}><BiHome/> </a>
     <a ref={createRef()} href="#about" onClick={() => setactive('#about')} className={active === '#about' ? 'active' : ''} > <BiUser/> </a>
