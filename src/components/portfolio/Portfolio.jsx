@@ -55,7 +55,7 @@ const data = [
     image: IMG9,
     title: ' a web application that provides in-depth weather information and accurate future forecasts based on the user location. Users can access real-time weather data, including temperature, humidity, wind speed, and atmospheric conditions. The app also allows users to search for and explore weather details for other locations worldwide, ensuring reliable and comprehensive weather insights.',
     github: 'https://github.com/Captain-awesome619/flance_assesment',
-    demo: 'https://flanceweatherapp.netlify.app/'
+    demo: 'https://flance-assesment.onrender.com/'
 
   },
   {
@@ -87,7 +87,7 @@ const data = [
     image: IMG6,
     title: 'A dynamic Full-Stack e-commerce application built with Next.js for a fast and responsive frontend,and Sanity.io as the headless CMS for scalable, efficient content management. It features an intuitive UI, and powerful backend capabilities, ensuring a smooth user experience for both shoppers and admins.',
     github: 'https://github.com/Captain-awesome619/Aesomeinc',
-    demo: 'https://awesome-inc-d54ba6.netlify.app/'
+    demo: 'https://aesomeinc.onrender.com'
 
   },
   {
@@ -111,7 +111,7 @@ const data = [
     image: IMG3,
     title: 'A cryptocurrency tracker app built with React.js and Native CSS. It fetches real-time crypto data using a REST API, providing users with prices, market trends, and search functionality.',
     github: 'https://github.com/Captain-awesome619/cryptoverse',
-    demo: 'https://crypto-verse-ac724d.netlify.app/'
+    demo: 'https://cryptoverse-duql.onrender.com/'
   },
   {
     id: 4,
