@@ -32,7 +32,7 @@ const data = [
     image: IMG11,
     title: 'A geo-social web app where users can post content with media to a live map, manage profiles, and explore the posts of other users. Built with Next.js, TypeScript, Tailwind CSS, and Appwrite.    — Designed by AnjolaDave',
     github: 'https://github.com/Captain-awesome619/safehood',
-    demo: 'https://safe-hood.netlify.app/'
+    demo: 'https://safehood-2ipr.onrender.com/'
 
   },
   {
@@ -71,7 +71,7 @@ const data = [
     image: IMG5,
     title: 'Explore my blog where I share insights on the tools and technologies I use — built with Hygraph (a powerful headless CMS), Next.js, and Tailwind CSS for a clean, responsive reading experience. Plus, try out the new AI chatbot feature that lets you ask questions and dive deeper into each topic!',
     github: 'https://github.com/Captain-awesome619/blog',
-    demo: 'https://dark-vale-b357a0.netlify.app/'
+    demo: 'https://blog-mnvj.onrender.com/'
 
   },
   {

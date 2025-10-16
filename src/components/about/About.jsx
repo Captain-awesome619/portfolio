@@ -122,7 +122,7 @@ const About = () => {
           </p>
 
          <a
-  href="https://dark-vale-b357a0.netlify.app/"
+  href="https://blog-mnvj.onrender.com/"
   target="_blank"
   rel="noopener noreferrer"
   className="btn btn-primary"
