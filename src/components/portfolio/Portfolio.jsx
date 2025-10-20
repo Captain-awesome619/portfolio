@@ -79,7 +79,7 @@ const data = [
     image: IMG7,
     title: 'A clean and simple responsive product landing page built using React and styled with Tailwind CSS. The design focuses on modern aesthetics, fast performance, and mobile-first responsiveness.it effectively highlights product features and drives user engagement.',
     github: 'https://github.com/Captain-awesome619/landing_page',
-    demo: 'https://store-landing-page.netlify.app/'
+    demo: 'https://landing-page-l3dr.onrender.com/'
 
   },
   {
@@ -118,7 +118,7 @@ const data = [
     image: IMG4,
     title: 'A full-stack Real Estate web application built with Next.js and native CSS, offering advanced search and filter functionality for seamless property browsing. Users can explore various real estate options with a clean, responsive design, ensuring a smooth experience across all devices.',
     github: 'https://github.com/Captain-awesome619/Realator',
-    demo: 'https://realator-85d0e6.netlify.app/'
+    demo: 'https://realator-7nde.onrender.com/'
   }
 ]
 
