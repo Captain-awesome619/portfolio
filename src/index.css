@@ -39,7 +39,7 @@ body{
     line-height: 1.7;
     color: var(--color-white) ;
     background-image: url(../src/assets/bg-texture.png);
-   
+  
     overflow-x: hidden;
 margin: 0;
 

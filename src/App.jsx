@@ -11,6 +11,7 @@ import Footer from './components/footer/Footer'
 import { useContext} from "react";
 import { themeContext } from './Context';
 import Services from './components/services/Services'
+import CircleCursor from './components/cursor'
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
       color: darkMode ? "white" : "",
     }}
     >
+     <CircleCursor/>
       <Header />
       <Nav />
       <About  />
