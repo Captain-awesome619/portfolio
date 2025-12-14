@@ -26,6 +26,7 @@ import Apk from "../../assets/application-fe0dec7c-59df-49d6-a3c1-a90af742034e.a
 import stableflow from "../../assets/stableflow.png"
 import IMG11 from '../../assets/safehood.png'
 import IMG12 from '../../assets/xtreme.png'
+import IMG13 from '../../assets/clarity.png'
 const data = [
   {
     id: 11,
@@ -33,6 +34,14 @@ const data = [
     title: 'A geo-social web app where users can post content with media to a live map, manage profiles, and explore the posts of other users. Built with Next.js, TypeScript, Tailwind CSS, and Appwrite.    — Designed by AnjolaDave',
     github: 'https://github.com/Captain-awesome619/safehood',
     demo: 'https://safehood-2ipr.onrender.com/'
+
+  },
+  {
+    id: 13,
+    image: IMG13,
+    title: 'Claritypulse, a full-stack web analytics platform where users sign up, generate a tracking script, and gain insight into their sites data such as traffick, user location, new users, and on-site interactions such as clicking and scrolling. Built with Next.js and Tailwind CSS with Supabase as the backend.',
+    github: 'https://github.com/Captain-awesome619/claritypulse',
+    demo: 'https://claritypulse.onrender.com/'
 
   },
   {
@@ -85,7 +94,7 @@ const data = [
   {
     id: 6,
     image: IMG6,
-    title: 'A dynamic Full-Stack e-commerce application built with Next.js for a fast and responsive frontend,and Sanity.io as the headless CMS for scalable, efficient content management. It features an intuitive UI, and powerful backend capabilities, ensuring a smooth user experience for both shoppers and admins.',
+    title: 'A dynamic Full-Stack e-commerce application built with Next.js for a fast and responsive frontend, and Sanity.io as the headless CMS for scalable, efficient content management. It features an intuitive UI and robust backend capabilities powered by a custom Node.js and Express API handling registration, sign-in, and password recovery ensuring a secure and seamless experience for both shoppers and admins.',
     github: 'https://github.com/Captain-awesome619/Aesomeinc',
     demo: 'https://aesomeinc.onrender.com'
 

@@ -79,6 +79,7 @@ const About = () => {
 
   return (
     <section id="about" ref={aboutRef}>
+     
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
