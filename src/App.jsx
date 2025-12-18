@@ -30,6 +30,7 @@ const App = () => {
       color: darkMode ? "white" : "",
     }}
     >
+      <script async src="https://claritypulse.onrender.com/track.js" data-key="ingest_faUIzN33izPk3p9-kUgY2PKF"></script>
      <CircleCursor/>
       <Header />
       <Nav />
