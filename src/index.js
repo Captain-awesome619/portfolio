@@ -6,6 +6,7 @@ import { ThemeProvider } from "./Context"
 
 ReactDOM.render(
 <ThemeProvider>
+       <script async src="https://claritypulse.onrender.com/track.js" data-key="ingest_faUIzN33izPk3p9-kUgY2PKF"></script>
     <div>
 <App/>
 </div>
