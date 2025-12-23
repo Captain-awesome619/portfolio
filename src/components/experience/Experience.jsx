@@ -32,45 +32,43 @@ const Experience = () => {
 
  const sectionRefs = useRef([]);
 
-   useGSAP(() => {
-    sectionRefs.current.forEach((el, index) => {
-      const fromDirection = index % 2 === 0 ? -100 : 100;
-      gsap.fromTo(
-        el,
-        { x: fromDirection, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
+useGSAP(() => {
+  sectionRefs.current.forEach((el, index) => {
+    const fromDirection = index % 2 === 0 ? -100 : 100;
 
- const items = el.querySelectorAll(".experience__details");
-      gsap.fromTo(
-        items,
-        { y: 50, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: "power2.out",
-          stagger: 0.15,
-          delay: 0.3,
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-          },
-        }
-      );
-
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: el,
+        start: "top 45%", // section is well inside viewport
+        toggleActions: "play none none reverse",
+      },
     });
-  }, []);
+
+    // Section slides in
+    tl.from(el, {
+      x: fromDirection,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.out",
+    });
+
+    // Items inside section
+    const items = el.querySelectorAll(".experience__details");
+
+    tl.from(
+      items,
+      {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        stagger: 0.15,
+      },
+      "-=0.5" // overlap with section animation
+    );
+  });
+}, []);
+
 
   
 

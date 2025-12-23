@@ -21,61 +21,43 @@ const About = () => {
   const buttonRef = useRef(null);
 
   useGSAP(() => {
-    const ctx = gsap.context(() => {
-      // Image slides in from left
-      gsap.from(imgRef.current, {
-        x: -100,
-        opacity: 0,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: imgRef.current,
-          start: "top 80%",
-        },
-      });
+  const ctx = gsap.context(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: aboutRef.current,
+        start: "top 40%", // section is WELL in view
+        toggleActions: "play none none none",
+      },
+    });
 
-      // Cards slide in from right
-      gsap.from(cardsRef.current, {
+    tl.from(imgRef.current, {
+      x: -100,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power3.out",
+    })
+      .from(cardsRef.current, {
         x: 100,
         opacity: 0,
         duration: 1,
         ease: "power3.out",
-        scrollTrigger: {
-          trigger: cardsRef.current,
-          start: "top 85%",
-          toggleActions: "play none none none",
-        },
-      });
-
-      // Paragraph slides in from right slightly after cards
-      gsap.from(paragraphRef.current, {
+      }, "-=0.6")
+      .from(paragraphRef.current, {
         x: 100,
         opacity: 0,
         duration: 1,
         ease: "power3.out",
-        scrollTrigger: {
-          trigger: paragraphRef.current,
-          start: "top 90%",
-          toggleActions: "play none none none",
-        },
-      });
-
-      // Button slides in from right last
-      gsap.from(buttonRef.current, {
+      }, "-=0.6")
+      .from(buttonRef.current, {
         x: 100,
         opacity: 0,
-        duration: 1,
+        duration: 0.8,
         ease: "power3.out",
-        scrollTrigger: {
-          trigger: buttonRef.current,
-          start: "top 95%",
-          toggleActions: "play none none none",
-        },
-      });
-    }, aboutRef);
+      }, "-=0.5");
+  }, aboutRef);
 
-    return () => ctx.revert();
-  }, []);
+  return () => ctx.revert();
+}, []);
 
   return (
     <section id="about" ref={aboutRef}>
@@ -127,7 +109,7 @@ const About = () => {
   target="_blank"
   rel="noopener noreferrer"
   className="btn btn-primary"
-  ref={buttonRef}
+ 
 >
   Check my AI powered Blog!
 </a>

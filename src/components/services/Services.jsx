@@ -10,39 +10,43 @@ gsap.registerPlugin(ScrollTrigger);
 const Services = () => {
   const listRef1 = useRef(null);
   const listRef2 = useRef(null);
+useGSAP(() => {
+  const animateList = (ref) => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ref,
+        start: "top 60%", // list is well inside viewport
+        toggleActions: "play none none none", // play once
+      },
+    });
 
-  useGSAP(() => {
-    const animateList = (ref) => {
-      gsap.from(ref.querySelectorAll("p"), {
-        x: -100,
-        opacity: 0,
-        duration: 1.2,
-        ease: "power3.out",
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: ref,
-          start: "top 85%",
-          toggleActions: "play none none none", // animate only once
-        },
-      });
+    // Left-side paragraphs
+    tl.from(ref.querySelectorAll("p"), {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      stagger: 0.2,
+    });
 
-      gsap.from(ref.querySelectorAll(".alt"), {
+    // Right-side (alt) paragraphs
+    tl.from(
+      ref.querySelectorAll(".alt"),
+      {
         x: 100,
         opacity: 0,
-        duration: 1.2,
+        duration: 1,
         ease: "power3.out",
         stagger: 0.2,
-        scrollTrigger: {
-          trigger: ref,
-          start: "top 85%",
-          toggleActions: "play none none none", // animate only once
-        },
-      });
-    };
+      },
+      "-=0.5" // overlap animations
+    );
+  };
 
-    animateList(listRef1.current);
-    animateList(listRef2.current);
-  }, []);
+  animateList(listRef1.current);
+  animateList(listRef2.current);
+}, []);
+
 
   return (
     <section id="services">
